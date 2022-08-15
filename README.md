@@ -1,2 +1,2 @@
 # wsuassetpricing
-FIN 596 FA2022
+Talks included from a doctoral-level finance seminar covering advanced topics in empirical asset pricing.
