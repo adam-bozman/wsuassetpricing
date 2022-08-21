@@ -1,6 +1,6 @@
 ---
 title: "Mutual fund performance"
-subtitle: "An emperical decomposition into stock-picking<br/>talent, style, transaction costs, and expenses"  
+subtitle: "An empirical decomposition into stock-picking<br/>talent, style, transaction costs, and expenses"  
 author: 
   - "Russ Wermers"
 date: 'Journal of Finance, 2000'
@@ -60,7 +60,7 @@ xaringanExtra::use_scribble()
 
 > ### Performance-Decomposition Methodology
 >
-> ### Emperical Findings
+> ### Empirical Findings
 
 ### Conclusion
 
@@ -306,13 +306,13 @@ This is the very same Carhart four-factor model we are familiar with.
 
 class: inverse center middle, hide-logo
 
-# Emperical Findings
+# Empirical Findings
 
 ---
 
 layout: true
 
-## Emperical Findings
+## Empirical Findings
 
 ---
 
