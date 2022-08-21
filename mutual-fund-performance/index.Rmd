@@ -43,6 +43,15 @@ style_duo_accent(
 )
 ```
 
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
+
 # Agenda
 
 ### Motivation
@@ -97,42 +106,8 @@ _Risk Shifting and Mutual Fund Performance (Huang, Sialm, and Zhang - 2009)_
 --
 
 
-
-
 ---
-
-### More R Code
-
-```{r eval=FALSE}
-dplyr::starwars %>% dplyr::slice_sample(n = 4)
-```
-
----
-
-```{r message=TRUE, eval=requireNamespace("cli", quietly = TRUE)}
-cli::cli_alert_success("It worked!")
-```
-
---
-
-```{r message=TRUE}
-message("Just a friendly message")
-```
-
---
-
-```{r warning=TRUE}
-warning("This could be bad...")
-```
-
---
-
-```{r error=TRUE}
-stop("I hope you're sitting down for this")
-```
-
----
-
+layout: false
 class: inverse center middle, hide-logo
 
 # Database
@@ -142,23 +117,19 @@ layout: false
 
 ## Database
 
-.pull-left[
-#### Here is an unordered list:
+.panelset[
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+.panel[.panel-name[CDA]
+#### CDA Investment Technologies
+
 ]
-
-.pull-right[
-
-#### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item five
+.panel[.panel-name[CRSP]
+#### CRSP NYSE/AMEX/Nasdaq
+]
+.panel[.panel-name[Diversification]
+]
+.panel[.panel-name[Summary Statistics]
+]
 ]
 
 ---
@@ -166,21 +137,15 @@ layout: false
 
 class: inverse center middle, hide-logo
 
-# Senate Banking Committee
+# Performance-Decomposition Methodology
 
 ---
 
 
 class: inverse center middle, hide-logo
 
-# '08 Financial Crisis
+# Emperical Findings
 
----
-
-
-class: inverse center middle, hide-logo
-
-# Moral Hazard
 
 ---
 
@@ -191,35 +156,20 @@ class: inverse center middle, hide-logo
 
 ---
 
+.panelset[
 
-name: colors
+.panel[.panel-name[Datetime]
 
-## Colors
-
-.left-column[
-Text color
-
-[Link Color](#3)
-
-**Bold Color**
-
-_Italic Color_
-
-`Inline Code`
+]
+.panel[.panel-name[Leverage]
+#### Leverage is used to define the risk exposure of firms before and after the crisis.
+]
+.panel[.panel-name[Methodology]
+]
+.panel[.panel-name[Bailouts]
+]
 ]
 
-.right-column[
-Lorem ipsum dolor sit amet, [consectetur adipiscing elit (link)](#3), 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Erat nam at lectus urna.
-Pellentesque elit ullamcorper **dignissim cras tincidunt (bold)** lobortis feugiat. 
-_Eros donec ac odio tempor_ orci dapibus ultrices. 
-Id porta nibh venenatis cras sed felis eget velit aliquet.
-Aliquam id diam maecenas ultricies mi.
-Enim sit amet 
-`code_color("inline")`
-venenatis urna cursus eget nunc scelerisque viverra.
-]
 
 ---
 
@@ -254,90 +204,6 @@ layout: true
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
----
-
-### Code Blocks
-
-#### R Code
-
-```{r eval=FALSE}
-ggplot(gapminder) +
-  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
-  geom_point() +
-  facet_wrap(~year)
-```
-
-#### JavaScript
-
-```js
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
----
-
-### More R Code
-
-```{r eval=FALSE}
-dplyr::starwars %>% dplyr::slice_sample(n = 4)
-```
-
----
-
-```{r message=TRUE, eval=requireNamespace("cli", quietly = TRUE)}
-cli::cli_alert_success("It worked!")
-```
-
---
-
-```{r message=TRUE}
-message("Just a friendly message")
-```
-
---
-
-```{r warning=TRUE}
-warning("This could be bad...")
-```
-
---
-
-```{r error=TRUE}
-stop("I hope you're sitting down for this")
-```
-
-
----
-layout: true
-
-## Tables
-
----
-exclude: `r if (requireNamespace("tibble", quietly=TRUE)) "false" else "true"`
-
-```{r eval=requireNamespace("tibble", quietly=TRUE)}
-tibble::as_tibble(mtcars)
-```
-
----
-
-```{r}
-knitr::kable(head(mtcars), format = 'html')
-```
-
----
-exclude: `r if (requireNamespace("DT", quietly=TRUE)) "false" else "true"`
-
-```{r eval=requireNamespace("DT", quietly=TRUE)}
-DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
-```
-
----
-layout: true
-
-## Lists
 
 ---
 
