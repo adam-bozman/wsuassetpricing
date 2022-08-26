@@ -151,7 +151,19 @@ layout: true
 
 ## Data & Research Design
 
+![](img/eq1.png)
+
+![](img/eq1.png)
+
 ---
+
+class: center, hide-logo
+background-image: url("img/timeline.png")
+background-size: contain
+
+---
+
+
 
 ### Data
 
