@@ -1,12 +1,13 @@
 ---
-title: "Presentation Ninja"
-subtitle: "&#x2694;&#xFE0F; xaringan +<br/>&#x1F60E; xaringanthemer"  
+title: "Do insider trades reflect both contrarian beliefs and superior knowledge about future cash flow realizations?"
+subtitle: ""  
 author: 
-  - "Yihui Xie"
-  - "Garrick Aden-Buie"
-date: '`r Sys.Date()`'
+  - "Joseph D. Piotroski | Darren T. Roulstone"
+date: 'Journal of Accounting & Economics, 2004'
 output:
   xaringan::moon_reader:
+    includes:
+      after_body: insert-logo.html
     css: xaringan-themer.css
     nature:
       slideNumberFormat: "%current%"
@@ -32,32 +33,131 @@ knitr::opts_chunk$set(
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_duo_accent(
-  primary_color = "#1381B0",
-  secondary_color = "#FF961C",
-  inverse_header_color = "#FFFFFF"
+  primary_color = "#A60F2D",
+  secondary_color = "#4D4D4D",
+  inverse_header_color = "#FFFFFF",
+  # fonts
+  header_font_google = google_font("Martel"),
+  text_font_google = google_font("Lato"),
+  code_font_google = google_font("Fira Mono")
 )
 ```
 
-## Typography
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
 
-Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
 
-[Link to another slide](#colors).
+# Agenda
 
-### Lorem Ipsum
+### Motivation
 
-Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
-Lacinia neque mollis nascetur neque urna velit bibendum. 
-Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.
+### Dichotomization of Insider Trading
 
-- Dolor cubilia nostra nunc sodales
+### Data & Research Design
 
-- Consectetur aliquet mauris blandit
+### Robustness
 
-- Ipsum dis nec porttitor urna sed
+### Conclusion
 
 ---
-name: colors
+
+class: inverse center middle, hide-logo
+
+# Motivation
+
+---
+
+## Motivation
+
+### Mixed Results in Prior Literature 
+
+- Givoly and Palmon (1985 - 10b5, 1935 Securities Exchang Act) are unable to document a link between insider trading profits and subsequent disclosure events.
+
+- Noe (1999 - clustered voluntary disclosure) finds trading patterns to be unrelated to forecasted earnings news.
+
+- Ke et al. (2003 - technical default) find managers of distressed firms to 'dump then pump' rather than 'pump and dump'
+
+- **Rozeff and Zaman (1998) looks at investor overreaction and insider purchasing of value and growth stocks**
+
+  - Piotroski and Roulstone mirror much of Rozeff and Zaman's methodology
+
+---
+
+class: inverse center middle, hide-logo
+
+# Dichotomization of Insider Trading
+
+---
+
+layout: true 
+
+## Dichotomization of Insider Trading
+
+---
+
+### What is meant by 'contrarian'?
+
+> A person who opposes or rejects popular opinion, especially in stock exchange dealing
+
+**The definition of contrarian, in a broad sense, is inherently ambiguous** 
+
+- In journalism, it's characterized by articles and books making counterintuitive claims
+- In science, it refers to those who challenge a scientific consensus
+- In investing, it refers to individuals speculating against movements and sentiments of most investors
+
+_"Insider can earn excess profit by either recognizing pricing errors made by outsider or by having superior knowledge about future cash flow realizations."_
+
+
+---
+
+> In both settings, insider trades help push prices towards fundamental value.
+
+.pull-left[
+
+### Contrarian Beliefs
+
+"In the former case, insider trade against current investor sentiment, recognizing that outsiders make valuation errors through the application of inferior valuation models and/or the incorporation of biased judgements."  
+
+- Prior research supports the hypothesis that insider are contrarian traders. Rozeff and Zaman (1998)
+- Prior research does not disentangle the source of insiders' superior trading performance.
+
+]
+
+.pull-right[
+
+### Superior Information
+
+"In the latter case, managers have private information about the patter of future cash flows.  Because prices respond to unexpected changes in cash flow, insider trade when their private knowledge of future performance and payoffs differs from current market expectations." 
+
+- Prior research examined and supported the belief that insiders trade on the basis of superior future cash flow information, three to nine quarters before an earnings break. Ke et al. (2003)
+
+]
+
+---
+
+layout: false
+
+class: inverse center middle, hide-logo
+
+# Data & Research Design
+
+---
+
+layout: true
+
+## Data & Research Design
+
+---
+
+### Data
+
+
+---
+
 
 ## Colors
 

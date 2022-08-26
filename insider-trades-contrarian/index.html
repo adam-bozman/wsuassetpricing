@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Presentation Ninja</title>
+    <title>Do insider trades reflect both contrarian beliefs and superior knowledge about future cash flow realizations?</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Yihui Xie" />
-    <meta name="author" content="Garrick Aden-Buie" />
-    <meta name="date" content="2022-08-22" />
+    <meta name="author" content="Joseph D. Piotroski | Darren T. Roulstone" />
     <script src="index_files/header-attrs/header-attrs.js"></script>
+    <link href="index_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="index_files/panelset/panelset.js"></script>
+    <script src="index_files/fabric/fabric.min.js"></script>
+    <link href="index_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
     <script src="index_files/htmlwidgets/htmlwidgets.js"></script>
     <link href="index_files/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
     <script src="index_files/datatables-binding/datatables.js"></script>
@@ -23,19 +27,13 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# Presentation Ninja
-]
-.subtitle[
-## ⚔️ xaringan +<br/>😎 xaringanthemer
+# Do insider trades reflect both contrarian beliefs and superior knowledge about future cash flow realizations?
 ]
 .author[
-### Yihui Xie
-]
-.author[
-### Garrick Aden-Buie
+### Joseph D. Piotroski | Darren T. Roulstone
 ]
 .date[
-### 2022-08-22
+### Journal of Accounting &amp; Economics, 2004
 ]
 
 ---
@@ -45,26 +43,117 @@ class: center, middle, inverse, title-slide
 
 
 
-## Typography
 
-Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
 
-[Link to another slide](#colors).
 
-### Lorem Ipsum
 
-Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
-Lacinia neque mollis nascetur neque urna velit bibendum. 
-Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.
+# Agenda
 
-- Dolor cubilia nostra nunc sodales
+### Motivation
 
-- Consectetur aliquet mauris blandit
+### Dichotomization of Insider Trading
 
-- Ipsum dis nec porttitor urna sed
+### Data &amp; Research Design
+
+### Robustness
+
+### Conclusion
 
 ---
-name: colors
+
+class: inverse center middle, hide-logo
+
+# Motivation
+
+---
+
+## Motivation
+
+### Mixed Results in Prior Literature 
+
+- Givoly and Palmon (1985 - 10b5, 1935 Securities Exchang Act) are unable to document a link between insider trading profits and subsequent disclosure events.
+
+- Noe (1999 - clustered voluntary disclosure) finds trading patterns to be unrelated to forecasted earnings news.
+
+- Ke et al. (2003 - technical default) find managers of distressed firms to 'dump then pump' rather than 'pump and dump'
+
+- **Rozeff and Zaman (1998) looks at investor overreaction and insider purchasing of value and growth stocks**
+
+  - Piotroski and Roulstone mirror much of Rozeff and Zaman's methodology
+
+---
+
+class: inverse center middle, hide-logo
+
+# Dichotomization of Insider Trading
+
+---
+
+layout: true 
+
+## Dichotomization of Insider Trading
+
+---
+
+### What is meant by 'contrarian'?
+
+&gt; A person who opposes or rejects popular opinion, especially in stock exchange dealing
+
+**The definition of contrarian, in a broad sense, is inherently ambiguous** 
+
+- In journalism, it's characterized by articles and books making counterintuitive claims
+- In science, it refers to those who challenge a scientific consensus
+- In investing, it refers to individuals speculating against movements and sentiments of most investors
+
+_"Insider can earn excess profit by either recognizing pricing errors made by outsider or by having superior knowledge about future cash flow realizations."_
+
+
+---
+
+&gt; In both settings, insider trades help push prices towards fundamental value.
+
+.pull-left[
+
+### Contrarian Beliefs
+
+"In the former case, insider trade against current investor sentiment, recognizing that outsiders make valuation errors through the application of inferior valuation models and/or the incorporation of biased judgements."  
+
+- Prior research supports the hypothesis that insider are contrarian traders. Rozeff and Zaman (1998)
+- Prior research does not disentangle the source of insiders' superior trading performance.
+
+]
+
+.pull-right[
+
+### Superior Information
+
+"In the latter case, managers have private information about the patter of future cash flows.  Because prices respond to unexpected changes in cash flow, insider trade when their private knowledge of future performance and payoffs differs from current market expectations." 
+
+- Prior research examined and supported the belief that insiders trade on the basis of superior future cash flow information, three to nine quarters before an earnings break. Ke et al. (2003)
+
+]
+
+---
+
+layout: false
+
+class: inverse center middle, hide-logo
+
+# Data &amp; Research Design
+
+---
+
+layout: true
+
+## Data &amp; Research Design
+
+---
+
+### Data
+
+
+---
+
 
 ## Colors
 
@@ -381,8 +470,8 @@ exclude: false
 DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
 ```
 
-<div id="htmlwidget-9d034f59f615731c2167" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9d034f59f615731c2167">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n      <th>drat<\/th>\n      <th>wt<\/th>\n      <th>qsec<\/th>\n      <th>vs<\/th>\n      <th>am<\/th>\n      <th>gear<\/th>\n      <th>carb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a4cfd4055b7a45e946d1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a4cfd4055b7a45e946d1">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n      <th>drat<\/th>\n      <th>wt<\/th>\n      <th>qsec<\/th>\n      <th>vs<\/th>\n      <th>am<\/th>\n      <th>gear<\/th>\n      <th>carb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 layout: true
@@ -633,6 +722,33 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   }
   preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
 })(document);</script>
+<style>
+.logo {
+  background-image: url(img/coug.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 110px;
+  height: 128px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
 
 <script>
 slideshow._releaseMath = function(el) {
