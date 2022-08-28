@@ -151,6 +151,8 @@ layout: true
 
 ## Data & Research Design
 
+---
+
 ### Firm's Purchase Ratio
 
 ![](img/eq1.png)
@@ -167,11 +169,34 @@ _The number of shares purchased/sold by the registered insiders (top executives 
 
 _The primary measure of future earnings news is **t+1's** annual earnings innovation.  Here ROAt equals net income before extraodordinary items (scaled by average total assets). ROA assumed to be unbiased market representation._
 
+
 ---
 
-## Data & Research Design
+### Rozeff & Zaman (1998)
 
+![](img/eq3.png)
 
+_These univariate tests, however, fail to separate out the effects of trading against misvaluation and trading with superior future information._
+
+- _GOODRET_ equals total market return
+- _GOODROA_ equals positive earnings performance/earnings innovation
+- _HRET_ and _MRET_ equal 1 if the 12-month market adjusted return is in the top and middle third of sample firms, respectively
+- _GRANTS_ equal the number of shares granted to insiders
+- _OPTN-EXRC_ equals the number of options exercised by insiders
+
+---
+
+### Empericial timeline
+
+####Fig 1(Next) illustrates, conceptually, the empirical timeline of insider trading.
+
+- For each firm-year observation, a purchase ratio is measured for firm _i_ over fiscal year _t_
+
+- Contemporaneous and future firm performance is measured over fiscal year _t_ and _t+1_ respectively
+
+- FYE denotes fiscal year end for year _t_
+
+- EA denotes the announcement of year _t's_ annual earnings innovation _ROAi,t_
 
 ---
 
@@ -194,6 +219,8 @@ layout: true
 
 ## Primary Results
 
+---
+
 ### Univariate Relations 
 
 ![](img/tab2.png)
@@ -202,17 +229,25 @@ layout: true
 
 ### Multivatiate Solutions
 
-
-1[](img/eq3.png)
-
----
-
 .panelset[
 .panel[.panel-name[Panel A]
 ![](img/pana.png)
 ]
 .panel[.panel-name[Panel B]
 ![](img/panb.png)
+]
+.panel[.panel-name[Column (5)]
+
+> "To corroborate the preceding results and control for ommitted performance variables, we estimate a full model (estimation (5)) that includes all three performance metrics"
+
+- Consistent with insiders trading on superior knowledge about future earnings innovations, period _t+1_ earnings innovation is positively associated with purchase activities _after_ controlling for future returns and contemporaneous earnings news
+
+- This trading-earnings relation is distinct from the BM and contemporaneous return relations documented by Rozeff and Zaman
+
+- These estimations _are_ consistent with Ke et al. (2003) that insiders capitalize on both outside investors' valuation errors and their own superior information
+
+- The low incremental R-squareds associated with the inclusion of future cash flows news suggests that trading on the basis of superior knowledge is less important than trading on the basis of misvaluation/contrarian belief
+
 ]
 ]
 
@@ -222,6 +257,66 @@ layout: false
 class: center, hide-logo
 background-image: url("img/tab3.png")
 background-size: contain
+
+---
+
+layout: true
+
+## Primary Results
+
+---
+
+### The Order of Results
+
+> First, univariate tests are run to confirm insider trading.  Second, a multivariate test is run (albiet mathematical intensive) that supports the idea of contrarian beliefs.  Last, they examine cross sectional differences to determine if inter-temporal shifts in insider trading laws and intra-firm differences in the access to information are associated with systematic variation in the observed insider trading-earnings relation.
+
+_Next,_
+
+#### "Relation between insider trading and future performance across analyst and firm size portfolios"
+
+
+#### "Variation in the costs of trading on future information"
+
+---
+
+### Analyst's and Firm Size
+
+.panelset[
+.panel[.panel-name[Analyst Coverage]
+
+
+]
+.panel[.panel-name[Firm Size]
+
+
+]
+.panel[.panel-name[Table 4]
+
+![](img/tab4.png)
+
+]
+]
+
+
+---
+
+### Variation in Risk and Reward
+
+.panelset[
+.panel[.panel-name[Enforcement Regimes]
+
+
+]
+.panel[.panel-name[Executive/Director]
+
+
+]
+.panel[.panel-name[Table 5]
+
+![](img/tab5.png)
+
+]
+]
 
 ---
 
@@ -244,4 +339,17 @@ background-image: url("img/tab6.png")
 background-size: contain
 
 ---
+
+layout: false
+
+class: inverse center middle, hide-logo
+
+# Conclusion
+
+---
+
+layout: false
+
+## Conclusion
+
 
