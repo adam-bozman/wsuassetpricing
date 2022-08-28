@@ -131,6 +131,7 @@ layout: false
 class: inverse center middle, hide-logo
 
 # Data &amp; Research Design
+#### Thomson Financial First Call Insiders Data
 
 ---
 
@@ -147,6 +148,8 @@ layout: true
 
 _The number of shares purchased/sold by the registered insiders (top executives and directors - Rozeff and Zaman) of firm **i** during fiscal year **t**._
 
+- To be comparable with Rozeff and Zaman (1998), data is restricted to open-market transaction and does not include firm-years without these
+
 ---
 
 ### Firm's Return on Assets
@@ -155,6 +158,12 @@ _The number of shares purchased/sold by the registered insiders (top executives 
 
 
 _The primary measure of future earnings news is **t+1's** annual earnings innovation.  Here ROAt equals net income before extraodordinary items (scaled by average total assets). ROA assumed to be unbiased market representation._
+
+- Ample evidence in prior literature links insider trading to future returns, but returns represent noisy measure of this information set
+
+- Neither insiders ex ante nor researches ex post can perfectly predict or explain how market expectations
+
+- The authors presume insiders should observe financial performance signals before other investors - next year's earnings influence stock prices (Ball and Brown, 1968) 
 
 
 ---
@@ -210,6 +219,9 @@ layout: true
 
 ### Univariate Relations 
 
+&gt; Table 2 presents basic univariate relations between firm performance and insider buying. Consistent with prior research, it documents that managers are more likely to purchase securities during periods of falling stock prices.
+
+
 ![](img/tab2.png)
 
 ---
@@ -219,9 +231,23 @@ layout: true
 .panelset[
 .panel[.panel-name[Panel A]
 ![](img/pana.png)
+
+- Panel A uses these same indicators variables 
+
+- Column (1) confirms the previously documented contrarian relations between purchase ratios and the firm's past returns (HRET and MRET) and book-to-market ratios (BM1-BM4)
+
+- Insider purchases are inversely related to contemporaneous 12-month returns and positively related to the firm's book-to-market ranking
+
 ]
 .panel[.panel-name[Panel B]
 ![](img/panb.png)
+
+- Panel B estimates coefficients using measures of future/continuous performance
+
+- Estimations (2)-(4) examine the incremental association between future firm performance and insider purchasing behavior (terciles)
+
+- Consistent with the unconditional results in Table 2, both GOODROA _t+1_ and GOODRET _t+1_ are positively associated with insider purchasing behavior 
+
 ]
 .panel[.panel-name[Column (5)]
 
@@ -269,11 +295,34 @@ _Next,_
 ### Analyst's and Firm Size
 
 .panelset[
+.panel[.panel-name[Preface]
+
+&gt; "We partition the sample by two variables that are correlated with a firm's information environment: the presence of analyst coverage and firm size."
+
+- An insider's ability to trade on future performance is inversely related to the informational efficiency of the firm's stock price
+
+- The more quickly _and_ completely a firm's stock price reflects shifts in firm level, industry, and/or macro-economic factors, the less opportunity for an insider to profit
+
+]
 .panel[.panel-name[Analyst Coverage]
+
+&gt; "We measure analyst coverage as whether or not at least one analyst filed a 1-year ahead earnings forecast on I/B/E/S during fiscal year _t_... In our sample, 45.4% of the firm-year observations had analyst coverage."
+
+- The presence of an active analyst community _and_ its pressure on management to disclose forward-looking financial information leads to a richer and more accurate information environment (Lang &amp; Lundholm, 1993)
+
+- So long as analysts' information acquisition, synthesis, and dissemination attenuate the manager's information advantage, the potential for insider trading on future performance weakens
 
 
 ]
 .panel[.panel-name[Firm Size]
+
+- Firm size is also correlated with the strength of the firm's information environment
+
+&gt; "Large firms tend to be heavily followed by the investment community and most information-based anomalies are attenuated for large firms."
+
+- Moreover, current annual earnings information is impounded into prices earlier in the fiscal year for large firms vis-à-vis small and mid-size firms 
+
+_We expect the relation between insider trading and future earnings to be inversely related to the firm's size._
 
 
 ]
@@ -290,12 +339,50 @@ _Next,_
 ### Variation in Risk and Reward
 
 .panelset[
+.panel[.panel-name[Preface]
+
+&gt; "Aside from potential variation in legal and political costs associated with differences in firm size and monitoring intensity, it is difficult to measure _ex ante_ firm-level differences in the cost of trading on future earnings information."
+
+A crude solution:
+
+_Differentiating between 'low enforcement' and 'high enforcement' periods_
+
+- Prior to the current sample period, Congress passed the Insider Trading and Securities Fraud Enforcement Act (1988) and the Securities Enforcement Remedies and Penny Stock Reform Act (1990) 
+
+- To test the effectiveness of these deterents, the trading data is expanded to between 1984 and 1999
+
+- Most importantly, GOODROA _t+1_ is significantly larger than the coefficient on current earnings news
+
+]
+
 .panel[.panel-name[Enforcement Regimes]
 
+.pull-left[
+
+#### Insider Trading and Securities Fraud Enforcement Act
+
+- This specifically targeted insider trading actions, it provided for fines up to three times the profit an offender made as a result of the inside information
+
+]
+
+.pull-right[
+
+#### Securities Enforcement Remedies and Penny Stock Reform Act 
+
+- This amended the Securities Act of 1933 more broadly, and it introduced prohibitions in management and board membership
+
+]
 
 ]
 .panel[.panel-name[Executive/Director]
 
+&gt; "Our insider-trading metric combines the open-market transactions of registered executives and directors; as such, all of our tests implicitly assume that executives and directors have similar access to firm-specific information." 
+
+- It is important to separate the board of directors as governing body from active executive management
+
+- Here, the coefficient on GOODROA _t+1_ is larger in magnitude for executives than directors (marginally statistically significant)
+
+- More importantly, the lack of positive relation between director trades and current earnings news is consistent with the predicated belief that their delayed receipt of information inhibits their ability to trade on insider information
 
 ]
 .panel[.panel-name[Table 5]
@@ -339,7 +426,18 @@ layout: false
 
 ## Conclusion
 
-This is my conclusion
+&gt; Existing research has separately shown that insiders trade on the basis of contrarian beliefs (Rozeff and Zaman, 1998) and on the basis of superior knowledge about future cash flow news (e.g., Ke et al., 2003) 
+
+- Strong evidence is presented that insider purchases are positively related to future earnings performance, positively related to book-to-market ratios, and inversely related to past returns
+
+- Each of these has incremental explanatory power for insider purchases, suggesting that insiders trade on the basis of both contrarian beliefs _and_ private information about future cash flow news
+
+- It seems that superior information about future cash-flow changes explains a smaller portion of insider purchase activities than do proxies for security misvaluation
+
+&gt; This paper does not explicitely examine the profitability of insider trades or the cost/benefit of insider trades on various horizons
+
+
+&gt; It is difficult to completely account for issues of endogeniety, particularly reverse causality 
 
 
     </textarea>
