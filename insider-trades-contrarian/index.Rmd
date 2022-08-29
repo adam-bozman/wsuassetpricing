@@ -109,7 +109,7 @@ layout: true
 - In science, it refers to those who challenge a scientific consensus
 - In investing, it refers to individuals speculating against movements and sentiments of most investors
 
-_"Insider can earn excess profit by either recognizing pricing errors made by outsider or by having superior knowledge about future cash flow realizations."_
+_"Insider can earn excess profit by either recognizing pricing errors made by outsiders or by having superior knowledge about future cash flow realizations."_
 
 
 ---
@@ -120,7 +120,7 @@ _"Insider can earn excess profit by either recognizing pricing errors made by ou
 
 ### Contrarian Beliefs
 
-"In the former case, insider trade against current investor sentiment, recognizing that outsiders make valuation errors through the application of inferior valuation models and/or the incorporation of biased judgements."  
+"In the former case, insider trade against current investor sentiment, recognizing that outsiders make valuation errors through the application of inferior valuation models and/or the incorporation of biased judgments."  
 
 - Prior research supports the hypothesis that insider are contrarian traders. Rozeff and Zaman (1998)
 - Prior research does not disentangle the source of insiders' superior trading performance.
@@ -131,7 +131,7 @@ _"Insider can earn excess profit by either recognizing pricing errors made by ou
 
 ### Superior Information
 
-"In the latter case, managers have private information about the patter of future cash flows.  Because prices respond to unexpected changes in cash flow, insider trade when their private knowledge of future performance and payoffs differs from current market expectations." 
+"In the latter case, managers have private information about the pattern of future cash flows.  Because prices respond to unexpected changes in cash flow, insiders trade when their private knowledge of future performance and payoffs differs from current market expectations." 
 
 - Prior research examined and supported the belief that insiders trade on the basis of superior future cash flow information, three to nine quarters before an earnings break. Ke et al. (2003)
 
@@ -174,7 +174,7 @@ _The primary measure of future earnings news is **t+1's** annual earnings innova
 
 - Ample evidence in prior literature links insider trading to future returns, but returns represent noisy measure of this information set
 
-- Neither insiders ex ante nor researches ex post can perfectly predict or explain how market expectations
+- Neither insiders ex ante nor researches ex post can perfectly predict or explain how market expectations change
 
 - The authors presume insiders should observe financial performance signals before other investors - next year's earnings influence stock prices (Ball and Brown, 1968) 
 
@@ -187,11 +187,11 @@ _The primary measure of future earnings news is **t+1's** annual earnings innova
 
 _These univariate tests, however, fail to separate out the effects of trading against misvaluation and trading with superior future information._
 
-- _GOODRET_ equals total market return
-- _GOODROA_ equals positive earnings performance/earnings innovation
+- _GOODRET_ equals positive total market return indicator variable
+- _GOODROA_ equals positive earnings performance/earnings innovation indicator variable
 - _HRET_ and _MRET_ equal 1 if the 12-month market adjusted return is in the top and middle third of sample firms, respectively
-- _GRANTS_ equal the number of shares granted to insiders
-- _OPTN-EXRC_ equals the number of options exercised by insiders
+- _GRANTS_ equals the log of one plus the % ratio of the sum of the number of options and shares of restricted stock granted to the firm's insiders during year _t_ to total shares outstanding at FYE
+- _OPTN-EXRC_ equals the log of one plus the % ratio of the number of options exercised by the firm's insiders during year _t_ to total shares outstanding at FYE
 
 ---
 
