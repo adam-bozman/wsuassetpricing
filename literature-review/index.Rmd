@@ -354,11 +354,65 @@ layout: true
 
 ---
 
-### Methodology & Questions
+### Data & Methodology
+
+#### This paper examines how political connections affect risk exposure of financial institutions.
+
+.panelset[
+.panel[.panel-name[Data]
+
+_"The population for this study consists of all financial firms (SIC codes 6000-6999) trading on the NYSE, AMEX, and Nasdaq from 1973-2009... American Depository Receipts (ADRs), Real Estate Investment Trusts (REITs), foreign-based firms, close-end funds, etc. are excluded (CRSP codes of 10 or 11)."_ 
+
+Databases:
+
+.pull-left[
+- Official Congressional Directory
+- OpenSecrets (lobbying data)
+- Boardex 
+]
+.pull-right[
+- Compustat
+- CRSP
+- Thomson Financial
+- HUD
+]
+]
+.panel[.panel-name[Methodology]
+.pull-left[
+![](img/sendummy.png)
+]
+.pull-right[
+- Column 1 represents the coefficient on _Committee Senator_
+- Column 2 includes firm and industry controls
+- **The average stock volatility in this sample is about 3%, so having a home senator on the Banking Committee increases an average firm's risk by about 5% to 8%.**
+]
+]
+.panel[.panel-name[Senate Banking Committee]
+
+- Jurisdiction includes **banking, financial markets, securities, international trade and finance, and economic policy**
+- Confirm heads of executive departments and government agencies (e.g., Treasury, the Federal Reserve, and the SEC)
+- Senators have additional leverage over government officials because they advise and consent power to confirm these officials
+- Most domestic financial institutions operate within state boundaries (e.g., United Bank of Iowa)
+- **Resolute** - Avoid issues with census restructuring and movement around representatives
+
+]
+]
 
 ---
 
-### Data & Conclusions
+### Questions & Conclusions
+
+"The critical component of the economic mechanism of moral hazard is the rational belief or expectation by market participants of outside intervention in adverse states of the world." 
+
+> Moral hazard has been a staple of economic theory since the 1960s, **but economists know little about how firm incentives are affected by potential future government intervention.**
+
+- In the sample from 1973 - 2009, the author finds a positive relationship between political connections and risk taking, as measured by stock volatility and/or leverage ratios
+- In a more narrow sample, the author finds that politically connected firms had higher leverage prior to the 2008 financial crisis and increased their leverage more in response to local housing price growth
+  - **But** they were also less likely to go bankrupt or go insolvent during and after the financial crisis **and** had higher stock returns during this crisis
+  
+There have been a number of new campaign finance laws and court rulings in the last decade (_Citizens United v. Federal Election Commission_)
+- How do these impact corporate campaign expenditures?
+- How do these findings impact industries like defense (Senate Armed Services Committee) and health care (Senate Health, Education, Labor, and Pensions Committee)
 
 ---
 
@@ -368,45 +422,25 @@ layout: true
 
 ---
 
+### Data & Methodology
+
+---
+
+### Questions & Conclusions
+
+---
+
 layout: true 
 
 ## Do Schocks to Personal Wealth Affect Risk-taking in Delegated Portfolios 
 
 ---
 
-### Methodology & Questions
+### Data & Methodology
 
 ---
 
-### Data & Conclusions
-
----
-
-layout: true 
-
-## Fire Sales and Impediments to Liquidity Provision in the Corporate Bond Market
-
----
-
-### Methodology & Questions
-
----
-
-### Data & Conclusions
-
----
-
-layout: true
-
-## How Much Should We Trust Staggered Difference-in-Difference
-
----
-
-### Methodology & Questions
-
----
-
-### Data & Conclusions
+### Questions & Conclusions
 
 ---
 
@@ -432,31 +466,28 @@ layout: true
 
 ---
 
-layout: true
-
-## Fuzzy-Trace Theory: Dual Processes in Memory, Reasoning, and Cognitive Neuroscience
-
----
-
-### Methodology & Questions
-
----
-
-### Data & Conclusions
-
----
-
 layout: true 
 
 ## Artificial Intelligence in Finance
 
 ---
 
-### Methodology & Questions
+### Mtivation & Methodology 
+
+.panelset[
+.panel[.panel-name[Growth of AI]
+]
+.panel[.panel-name[AI in Financial Services]
+]
+.panel[.panel-name[Unsupervised Learning]
+]
+.panel[.panel-name[Supervised Learning]
+]
+]
 
 ---
 
-### Data & Conclusions
+### Policy-making & Conclusions
 
 ---
 
@@ -466,11 +497,11 @@ layout: true
 
 ---
 
-### Methodology & Questions
+### Case Studies
 
 ---
 
-### Data & Conclusions
+### Summary & Conclusions
 
 ---
 
@@ -483,22 +514,28 @@ class: inverse center middle, hide-logo
 ---
 
 ## Interests and Future Research
+#### Potential Papers
+- Payoff complementarities and financial fragility: Evidence from mutual fund outflows (JFE, 2022)
+- Predictably Unequal? The Effects of Machine Learning on Credit Markets (JF, 2022)
+- A theory of financial media (JFE, 2021)
+- Bitcoin's limited adoption problem (JFE, 2022)
+- A quantitative model of dynamic moral hazard (Forthcoming, RFS) 
+- Listening in on investors' thoughts and conversations (JFE, 2021)
+- Growth forecasts and news about monetary policy (JFE, 2022) 
 
-
-Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
-
-[Link to another slide](#colors).
-
-### Lorem Ipsum
-
-Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
-Lacinia neque mollis nascetur neque urna velit bibendum. 
-Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.
-
-- Dolor cubilia nostra nunc sodales
-
-- Consectetur aliquet mauris blandit
-
-- Ipsum dis nec porttitor urna sed
-
+.pull-left[
+#### Research Topics
+- Financial Fragility
+- Emerging Asset Classes & Pricing
+- Moral Hazard
+- Behavioral Finance/Investor Behavior
+- ML/AI/Sentiment Analysis/Fuzzy Trace Theory/NLP/MMT
+]
+.pull-right[
+#### Research Ideas 
+- Sentiment Analysis on Social Media (Buy/Sell following Elon - "The Customer Knows Best")
+- Effects of 'stable coins' - particularly 'algorithmic stable coins' and their impact on other currencies
+- SWIFT alternatives - Cryptocurrencies, DeFi, and central banks' adoption of different digital payment systems
+- Influences of Influencers on Investor Behavior
+]
 ---
