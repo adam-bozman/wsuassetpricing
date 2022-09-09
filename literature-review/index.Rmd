@@ -63,7 +63,6 @@ xaringanExtra::use_scribble()
 ### Summer '22 Literature
 
 - Central Bank Digital Currency and Banks 
-- Fuzzy-Trace Theory: Dual Processes in Memory, Reasoning, and Cognitive Neuroscience
 - Artificial Intelligence in Finance
 - Machine learning at central banks
 ]
@@ -96,9 +95,30 @@ layout: true
 
 ### Methodology & Questions
 
+"We model how a cyber attack may be amplified through the U.S. financial system, focusing on the wholesale payments network."
+
+Analogies come from SWIFT - Andrew's interested in SWIFT alternatives - potentially crypto, right?
+
+With respect to the literature on theoretical bank runs A pre-moretem analysis to uncover ways that attacks may be amplified, using comprehensive Fedwire data on wholesale payments between financial instiutions in the U.S.
+(data is restricted to Fedwire - Fed employee)
+
+
+
 ---
 
 ### Data & Conclusions
+
+All data comes from Federal Reserve Bank of New York employees - inherently confidential.
+
+Authors estimate that spillovers of an attack on one of the five most active banks would impair 31% of the network, on average (some days being significantly worse). 
+
+Alternative scenarios: 
+
+Other banks respond with liquidity hoarding, forgone payment activity could reach more than 2.5 times daily GDP.  
+
+Reverse stress tests also show attacks on groups of small banks could impair a significant amount of the network.  
+
+Additionally, through third-party providers and financial market utilities pose additional risks - (expand)
 
 ---
 
@@ -205,6 +225,8 @@ layout: true
 ### Data & Conclusions
 
 ---
+
+layout: false
 
 class: inverse center middle, hide-logo
 
