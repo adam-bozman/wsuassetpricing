@@ -93,7 +93,7 @@ layout: true
 
 ---
 
-### Methodology & Questions
+### Data & Methodology
 
 "We model how a cyber attack may be amplified through the U.S. financial system, focusing on the wholesale payments network."
 
@@ -106,7 +106,7 @@ With respect to the literature on theoretical bank runs A pre-moretem analysis t
 
 ---
 
-### Data & Conclusions
+### Questiions & Conclusions
 
 All data comes from Federal Reserve Bank of New York employees - inherently confidential.
 
@@ -128,11 +128,88 @@ layout: true
 
 ---
 
-### Methodology & Questions
+### Data & Methodology
+
+> "When we started our study, _Coinmarketcap.com_ listed both active and defunct cryptocurrencies, thus alleviating concerns about survivorship bias."
+
+.pull-left[
+**Restrictions:**
+1,827 coins in total 
+Daily close prices to construct weekly coin returns
+2014-2020
+Coins must have price, volume, and mkt cap (>$1,000,000)
+Only exchanges with public APIs (no DeFi)
+- 109 coins in 2014
+- 1,559 coins in 2018
+- 665 coins in 2020
+- 1,446 (September 9th, 2022)
+]
+
+.pull-right[
+**A New 3-Factor Model**
+
+Principal Component Analysis
+PC1 strongly correlates with the cryptocurrency size factor
+PC2 is significantly exposed to the cryptocurrency momentum factor 
+These two account for 45% of the variation
+
+A reduction from 24 to 10 characteristics that are statistically significant
+
+CMKT (Cryptocurrency Market Factor)
+- Value-weighted return of all cryptos and U.S. T-Bill
+CSMB (Cryptocurrency Size Factor)
+- Accounts for mkt cap, price, max day pric, price volume, and stdev of price volume
+CMOM (Cryptocurrency Momentum Factor)
+- accounts for one-week, two-week, three-week, four-week, and one-to-four week momentum strategies
+
+Followed FF 1993 2X3 sorts 
+
+Size mkt cap: bottom 30% small, middle 40% mid, and top 30% B
+
+CMOM = 1/2(Small High + Big High) - 1/2(Small Low + Big Low)
+
+]
 
 ---
 
-### Data & Conclusions
+### Questions & Conclusions
+
+.panelset[
+.panel[.panel-name[Size as a Proxy]
+
+> A common critique of corss-sectional trading strategies... **studies show that the size effect in the equity market is weak outside of the original Banz (1981) sample.** 
+
+2 Points:
+1. Size may proxy for an illiquidity premium
+1. The tradeoff between capital gains and the convenience yield: in equilibrium, **the convenience yield of larger and more mature cryptocurrencies is higher, and thus their capital gain should be lower** (Sockin and Xiong, 2018)
+
+Smaller coins have lower prices and higher illiquidity, relative to larger coins
+The CSMB is greater among coins that have higher arbitrage costs
+In the time series, CSMB is higher at times of high market volatility
+
+The CSMB is significantly and positively exposed to stdev of crypto market returns, suggesting that the CSMB performs well in a more volatile market (supporting the liquidity view of the size premium)
+]
+.panel[.panel-name[Momentum Effect]
+> "We find that cryptocurrency momentum effect is strong at relatively short horizons" (<1 Month)
+
+Following the behavioral underreaction channel, momentum should be stronger among assets that receive less attention
+- Long-short momentum strategy in the below-median size group generates insignificant weekly returns
+- Long-short strategy in the above-median size group generates statistically significant 3.2% weekly returns
+
+CMOM is more pronounced among coins with high attention as proxied by trading volume (assuming accurate volume estimates)
+- In contrast to equity markets, potentially too much uncertainty
+
+]
+.panel[.panel-name[Conclusions]
+"This paper shows that the cross-section of cryptocurrencies can be meaningfully analyzed using standard asset pricing tools." 
+
+While the authors provide evidence to support some plausible mechanisms behind the CSMB and CMOM effects, these channels are only plausible explanations.
+
+This market is still very young, and **there is not guarantee that these results will hold in the future** (2022 Bust)
+
+Still, these results **may act as a proxy to other new/emerging asset classes** that may come into existence in the future
+
+]]
 
 ---
 
@@ -142,11 +219,86 @@ layout: true
 
 ---
 
-### Methodology & Questions
+### Data & Methodology
+
+.panelset[
+.panel[.panel-name[Data]
+.pull-left[
+All Pricing Data comes from CoinAPI.io
+
+> "Ironically, new large entities have gained centralized control over the vast majority of operations in the cryptocurrency world, such as centralized exchanges that handle the majority of transactions and **stable coin issuers that can control the supply of money like a central bank.**"
+
+**iFinex > Bitfinex > Tether**
+
+]
+
+.pull-right[
+.center[![bitcoin](img/bitcoinpic.png)]
+]
+
+]
+.panel[.panel-name[Methodology]
+
+#### Pushed 
+
+Tether's price relative to the USD may increase as a consequence of strong investor demand, and Tether may also be driven by its usefulness as a facilitator of cross-exchange arbitrage to eliminate pricing discrepancies across cryptocurrency exchanges.
+
+#### PUlled
+
+If Tether issuers are trying to provide stability to the market during downtourns, outflows of Tether and purchases of Bitcoin by Bitfinex may follow periods of negative Bitcoin returns.  Bitcoin returns may show a return reversal after negative returns.  If tether is not fully backed by USD/Euro at the outset, but issuers want to signal otherwise to investors by releasing EOM accounting statements, then Tether creators may liquidate Bitcoins into USD to demonstrate sufficient reserves.
+
+]
+]
 
 ---
 
-### Data & Conclusions
+### Questions and Conclusions
+
+.panelset[
+.panel[.panel-name[High-flow Events]
+.pull-left[
+.contain[![bitcoin](img/bitcoinpic.png)]
+]
+.pull-right[
+
+- When removing the top 5% and 10% of hours (volume), returns are 67.2% and 79.2% lower, respectively
+- A monte-carlo simulation excluding these highest hours returns just 221% (March 1, 2017 - March 31st, 2018) buy-and-hold
+
+**Replacing these top 1% of hours with other randomly selected hours, none of the 10,000 simulations return close to this actual return.**
+
+]
+
+]
+.panel[.panel-name[1LSg]
+
+.pull-left[
+
+![](img/1lsg.png)
+]
+.pull-right[
+
+Remember the single player scenario? 1LSg received over half of all Bitcoin flows on Bitfinex exchange (March 1, 2017 - March 31, 2018)
+
+_"The high 1LSg flow hours are the top 1% of hours with high 1LSg flows,"_ which similarly follows with the top 5% and 10% of 1LSg flows. 
+
+Note: For the net Tether/Bitcoin flows associated with the other five main Tether-based exchanges (Binance, HitBTC, Huobi, Kraken, and OKEx), **removing the top 1%, 5%, and 10% of flows has no effect on simulated Bitcoin prices.**
+
+]
+]
+.panel[.panel-name[Conclusions]
+
+The authors established that one large player on Bitfinex uses Tether to purchase large amounts of Bitcoin when prices are following the printing of Tether (consistent with the supply-driven hypothesis).
+
+> "More broadly, these findings also suggest that innovative technologies designed to bypass traditional banking systems have not eliminated the need for external surveillance, monitoring, and a regulatory framework." 
+
+Following this papers publication, the State of New York Office of the Attorney General ordered Bitfinex and Tether to pay $18.5 million (nominal relative to some other recent SEC crackdowns)
+
+_"Bitfinex and Tether recklessly and unlawfully covered-up massive financial losses to keep their scheme going and protect their bottom lines."_
+
+.pull-right[(AG Letitia James)]
+
+]
+]
 
 ---
 
@@ -161,6 +313,38 @@ class: inverse center middle, hide-logo
 layout: true
 
 ## Availability, recency, and sophistication in </br> the repurchasing behavior of retail investors
+
+---
+
+### Data & Methodology
+
+.panelset[
+.panel[.panel-name[Data]
+
+Data is composed of 1.9 million trades made by approximately 80,000 households between January 1991 to November 1996.  
+
+> Individual investor trading data at a large discount borkerage house indicates that repurchasing is a fairly pervasive behavior, with about **40% of all households making at least one repurchase**. These 'repurchasing households' account for **nearly 80% (848,388 trades) of the total number and nearly 90% ($10.55 billion) of the value of all stock purchases at this brokerage house**.  
+
+]
+.panel[.panel-name[Methodology]
+
+The authors construct probit regressions with dummy variables for various stocks and investor characteristics (e.g., profit, size, extreme_ret, tech_stk) in an attempt to test repurchased stocks for characteristics that might proxy for a high degree of attention and test for types of investors who engage in repurchases.  
+
+There were marginally significant investor preferences for repurchasing stocks previously sold for a profit along with repurchasing stocks that were in the previous day's highest-return decile, but the most significant result was the recency effect.  
+
+With regard to diversification, investors who repurchase more often tend to have less-diversified portfolios.
+
+]
+]
+---
+
+### Questions and Conclusions
+
+Retail investors face time and information constraints, causing them to use cognitive shortcuts and heuristics.  **Investors will use readily available information and repurchase stocks that are touted in the news or stocks in which they previously made a profit** - _a gambler's mindset._
+
+Investors display a preference for repurchasing stocks with large positive returns on the previous day and a few large-cap stcoks in a few industries.  Of the repurchases, 36% are in the technology sector and about 14% are in the pharmaceutical and retail sectors.  **These stocks are easy for investors to recall because of wide analyst coverage, heavy advertising, and/or news headlines.**
+
+Nofsinger concludes that the recency of a trade plays a significant role in the repurchase decision and this behavior is suboptimal and associated with less sophisticated investors.
 
 ---
 
