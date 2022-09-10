@@ -3,7 +3,7 @@
   <head>
     <title>FIN 596</title>
     <meta charset="utf-8" />
-    <meta name="date" content="2022-09-09" />
+    <meta name="date" content="2022-09-10" />
     <script src="index_files/header-attrs/header-attrs.js"></script>
     <link href="index_files/remark-css/default.css" rel="stylesheet" />
     <link href="index_files/panelset/panelset.css" rel="stylesheet" />
@@ -29,7 +29,7 @@ class: center, middle, inverse, title-slide
 ### 
 ]
 .date[
-### 2022-09-09
+### 2022-09-10
 ]
 
 ---
@@ -410,16 +410,34 @@ There have been a number of new campaign finance laws and court rulings in the l
 
 layout: true 
 
-## The customer knows best: The investment value of consumer opinions 
+## The customer knows best: &lt;br&gt; The investment value of consumer opinions 
 
 ---
 
 ### Data &amp; Methodology
 
+&gt; July 2004 - December 2015, 14.5 million customer reviews of 270,000 different products were posted on Amazon.com
+
+- Huang looks at panel data from 346 public firms (primarily business equipment, consumer nondurables, and manufacturing)
+  - This sample is considerably larger than prior literature with similar methodology
+  
+- Baseline financial data comes from CRSP, Compustat, and I/B/E/S 
+
+- Panel data covers firm months, with each month having at least 10 reviews and, on average, including 150 stocks
+
+- Regressions assess the determinants of the abnormal ratings - examining the ratings' investment value, their predictive effect for future returns, and their status as new information applying Fama-Macbeth tests
 ---
 
 ### Questions &amp; Conclusions
 
+_**Consumer opinions are shown to provide new value-relevant information for stock investing via analysis of millions of customer product reviews posted on Amazon.com** - this return predictability holds over time, remains after controlling for firm characteristics, and can signal revenue and earnings surprises._
+
+- A spread portfolio constructed to purchase stocks with abnormal favorable customer ratings in the top tercile and selling stocks in the bottom tercile **generates and abnormal monthly return of 55bps to 73 bps**
+  - These ratings may positively predict revenue and earnings surprises and net purchases by hedge fund managers
+
+- These results are **concentrated among stocks in less efficient market sectors** (small cap/low analyst coverage)
+
+- **Anecdotal evidence says that customer postings are curated online, particularly by smaller companies striving to gain attention via fictitious reviews**
 ---
 
 layout: true 
@@ -430,9 +448,31 @@ layout: true
 
 ### Data &amp; Methodology
 
+&gt; "Using exogenous wealth shocks stemming from the collapse of the housing market, we show that managers who experience substantial losses in their home values subsequently reduce risk in their delegated funds."
+
+_If managers' risk preferences change following a negative shock to personal wealth, they may reduce risk-taking in the delegated fund simply to reduce the risk of their personal portfolios._
+
+- Data comes from a merged CRSP-Morningstar panel, resulting in 5,146 fund-manager pairs as of the fourth quarter 2006
+  - Housing data comes from Zillow
+
+- A personal leverage ratio for managers is given by collecting mortgage information from the LexisNexis Public Records database
+
 ---
 
-### Questions &amp; Conclusions
+layout: false
+
+### Results &amp; Conclusions
+
+.pull-left[
+
+![](img/did.jpeg)
+]
+.pull-right[
+![](img/log.png)
+- The figure shows coefficient estimates and standard errors from the OLS estimation of a difference-in-differences regression, **using quarterly, manager-fund observations of active U.S. domestic equity mutual funds**
+- _RelativeHousingWealthShock_ is an indicator variable if the city-adjusted housing wealth change is less than the median sample
+- Risk is measured as the quarterly standard deviation of daily fund returns
+]
 
 ---
 
@@ -450,11 +490,66 @@ layout: true
 
 ---
 
-### Methodology &amp; Questions
+### Data &amp; Methodology 
+
+&gt; "We show that CBDC need not reduce bank lending unless friction and synergies bind deposits and lending together... Our counterfactual analysis shows that a **CBDC can replace a significant fraction of bank deposits, especially when it pays interest.**"
+
+.panelset[
+.panel[.panel-name[Deposits &amp; Lending]
+
+- Even assuming a 'quality discount', (Table 3) suggests that when CBDC is introduced, it competes with bank deposits and results in lower deposit shares for banks
+- Assuming non-interest-bearing CBDC, more yield-sensitive households will be more likely to deposit with banks
+- CBDC influences banks' funding structure, **banks need to substitute their lost deposits with more expensive wholesale borrowings**
+- Assuming banks substitute deposits with wholesale funding, one dollar increase in CBDC reduces bank lending by 34 cents
+- If the Fed pays an interest rate that equals the current federal funds rate, the interest-bearing CBDC will be able to capture an additional 30% of the deposit market
+
+]
+.panel[.panel-name[Monetary Policy]
+.pull-left[
+![](img/counterfactual.png)
+]
+.pull-right[
+![](img/varcbdc.png)
+]
+]
+.panel[.panel-name[Bank Funding]
+.pull-left[
+_"Our analysis shows that the introduction of CBDC can significantly impair the attractiveness of bank deposits and lead to outflows of deposit funding."_
+
+As banks' external financing cost starts to increase, **banks will cut their loan provisions further because they now face higher costs to replace the  lost deposit funding.**
+
+]
+.pull-right[
+![](img/depspread.png)
+]
+]
+.panel[.panel-name[Big v. Small]
+.pull-left[
+"There is large heterogeneity in banks' external financing frictions across the size distribution."
+
+- Banks in the top one percentile as big banks (the rest small)
+- Smaller banks face particularly high frictions in accessing the wholesale funding market
+- Big banks are able to rely on their wholesale funding access to replace lost deposits
+]
+.pull-right[
+![](img/bigsmall.png)
+]
+]
+]
 
 ---
 
-### Data &amp; Conclusions
+### Counterfactuals &amp; Conclusions
+
+&gt; "We first clarify an important conceptual issue underlying many extant debates about CBDC, that is, **CBDC need not to reduce bank lending unless frictions and synergies bind deposits and lending together."**
+
+- Evaluating the potential impact of CBDC on bank lending is effectively an evaluation of magnitudes of these frictions and synergies
+
+  - CBDC could replace a significant fraction of bank deposits, especially when it pays interest
+  
+  - However, CBDC would have a much smaller impact on bank lending because banks could replace a large fraction of the lost deposits with wholesale funding (big banks)
+  
+  - This also may cause banks' funding costs to be more sensitive to short-term rates, **increasing their exposure to interest rate risk**
 
 ---
 
@@ -491,9 +586,74 @@ layout: true
 
 ### Case Studies
 
+&gt; "We present three case studies relevant to central bank policy, financial regulation, and economic modelling more widely." 
+
+.panelset[
+.panel[.panel-name[Banking Supervision]
+.pull-left[
+"Regular close scrutiny of banks' balance sheets has become a standard for financial supervisors following the financial crises.  However, the manual inspection of hundreds or thousands of firms records' can be inefficient."
+- Using naıve Bayes, k-NN, decision tree, SVM, and random forests
+
+]
+.pull-right[
+![](img/fraud.png)
+]
+]
+.panel[.panel-name[UK CPI Inflation]
+
+"We use a simple framework for consumer price index **(CPI) inflation forecasting on a medium-term horizon of two years.**"
+
+All data is publicly available in the UK, and all approaches will be based on a lead-lag model where the target variable CPI inflation leads to changes or the level of other variables (features) by two years.
+
+.pull-left[
+All data are utilized in both training and testing sets of random forests (for both pre-crisis and post-crisis)
+
+Sources: BoE, ONS, BIS, World Bank
+]
+.pull-right[
+- CPI prices
+- debt(s)
+- employment(s)
+- income(s)
+- inflation rate(s)
+- external(s)
+]
+
+]
+.panel[.panel-name[Fintech Unicorns]
+
+_Using clustering analysis of the universe of investor-firm funding for technology firms, a shortlist of potentially high-success firms in fintech is found._
+
+- A central bank (given the centrality of the financial sector in contemporary economies) should try to anticipate and be prepared for the economic shocks that may arise from new entrants (Uber, Airbnb, Digital Currencies)
+- Using CrunchBase database (1960 - 2015)
+
+.pull-left[
+**4 Features for _a priori_ clustering**:
+]
+.pull-right[
+1. The amount of money raised/year
+1. Average number of funding rounds/year
+1. Average number of individual investors/year
+1. Average score of investors (prior investors)
+]
+]
+]
+
 ---
 
 ### Summary &amp; Conclusions
+
+&gt; "As for the analogy of cooking, the successful design of a learning system depends on the combination of the right ingredients as well as the experience of the chef."
+
+#### An Important Note
+
+- An increasing quantity of **granular micro or high-frequency data** are becoming available to central banks and regulators, including **single asset holdings and transactions of financial institutions, individual household portfolios and consumption behaviours, firms' investment and hiring strategies, payments data, etc.**
+
+#### Potential Drawbacks
+
+1. **The difference between causal inference and prediction**, where ML tools often ignore the issue of endogeneity
+1. **The interpretability of many techniques**, where a model's parameters or outputs cause confusion ('black boxes' in neural networks)
+1. **The modelling of time**, where an ignorance arises in cross-sectional approaches
 
 ---
 
@@ -517,7 +677,7 @@ class: inverse center middle, hide-logo
 
 .pull-left[
 #### Research Topics
-- Financial Fragility
+- Financial Fragility &amp; Crisis
 - Emerging Asset Classes &amp; Pricing
 - Moral Hazard
 - Behavioral Finance/Investor Behavior
