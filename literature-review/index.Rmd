@@ -72,9 +72,7 @@ xaringanExtra::use_scribble()
 - Availability, recency, and sophistication in the repurchasing behavior of retail investors
 - Political Capital and Moral Hazard
 - The customer knows best: The investment value of consumer opinions 
-- Do Schocks to Personal Wealth Affect Risk-taking in Delegated Portfolios 
-- Fire Sales and Impediments to Liquidity Provision in the Corporate Bond Market
-- How Much Should We Trust Staggered Difference-in-Difference
+- Do Shocks to Personal Wealth Affect Risk-taking in Delegated Portfolios 
 
 ### Interests & Future Research
 ]
@@ -95,30 +93,38 @@ layout: true
 
 ### Data & Methodology
 
-"We model how a cyber attack may be amplified through the U.S. financial system, focusing on the wholesale payments network."
+"**We model how a cyber attack may be amplified through the U.S. financial system**, focusing on the wholesale payments network."
 
-Analogies come from SWIFT - Andrew's interested in SWIFT alternatives - potentially crypto, right?
+- All data come directly from the Fedwire (restricted)
 
-With respect to the literature on theoretical bank runs A pre-moretem analysis to uncover ways that attacks may be amplified, using comprehensive Fedwire data on wholesale payments between financial instiutions in the U.S.
-(data is restricted to Fedwire - Fed employee)
+- Compromising functions include confidentiality, **availability**, and **integrity** (all resulting in direct losses, reputational costs, **spillover effects**, and **bank runs**)
 
-
+- Through all _a priori_ simulations, the ability of a bank to service running creditors may be impaired
+  - Financial diversity and uncertainty could spark runs on uncompromised operations of the respective bank
+  - May be further complicated through asymmetric information (information disclosure)
 
 ---
 
-### Questiions & Conclusions
+### The Fedwire
 
-All data comes from Federal Reserve Bank of New York employees - inherently confidential.
+.center[![](img/dependencies.png)]
 
-Authors estimate that spillovers of an attack on one of the five most active banks would impair 31% of the network, on average (some days being significantly worse). 
+---
 
-Alternative scenarios: 
+### Results & Conclusions
 
-Other banks respond with liquidity hoarding, forgone payment activity could reach more than 2.5 times daily GDP.  
+> Authors estimate that spillovers of an attack on one of the five most active banks would impair 31% of the network, on average (some days being significantly worse). 
 
-Reverse stress tests also show attacks on groups of small banks could impair a significant amount of the network.  
+#### Alternative scenarios: 
 
-Additionally, through third-party providers and financial market utilities pose additional risks - (expand)
+- Other banks respond with liquidity hoarding, **forgone payment activity could reach more than 2.5 times daily GDP**.  
+
+- Reverse stress tests also show attacks on groups of small banks could impair a significant amount of the network.  
+
+- Additionally, through third-party providers and financial market utilities pose additional risks
+  - Clearing House Interbank Payment System (CHIPS) or Continuous Linked Settlement (CLS) alongside other FMUs may impair liquidty of big banks that are not attacked
+  
+- The Fed sees payment flows without purpose, so they are unable to predict how this may impact borrowers and the 'real economy'
 
 ---
 
@@ -128,11 +134,11 @@ layout: true
 
 ---
 
-### Data & Methodology
+### Data
 
 > "When we started our study, _Coinmarketcap.com_ listed both active and defunct cryptocurrencies, thus alleviating concerns about survivorship bias."
 
-.pull-left[
+
 **Restrictions:**
 1,827 coins in total 
 Daily close prices to construct weekly coin returns
@@ -143,36 +149,42 @@ Only exchanges with public APIs (no DeFi)
 - 1,559 coins in 2018
 - 665 coins in 2020
 - 1,446 (September 9th, 2022)
-]
 
-.pull-right[
+---
+
+### Methodology
+
+.pull-left[
+
 **A New 3-Factor Model**
 
-Principal Component Analysis
-PC1 strongly correlates with the cryptocurrency size factor
-PC2 is significantly exposed to the cryptocurrency momentum factor 
-These two account for 45% of the variation
+Principal Component Analysis: 
+- PC1 strongly correlates with the cryptocurrency size factor
+- PC2 is significantly exposed to the cryptocurrency momentum factor 
+- These two account for 45% of the variation
 
 A reduction from 24 to 10 characteristics that are statistically significant
 
+**Followed FF 1993 2X3 sorts **
+
+]
+
+.pull-right[
+
 CMKT (Cryptocurrency Market Factor)
 - Value-weighted return of all cryptos and U.S. T-Bill
+
 CSMB (Cryptocurrency Size Factor)
 - Accounts for mkt cap, price, max day pric, price volume, and stdev of price volume
+
 CMOM (Cryptocurrency Momentum Factor)
-- accounts for one-week, two-week, three-week, four-week, and one-to-four week momentum strategies
-
-Followed FF 1993 2X3 sorts 
-
-Size mkt cap: bottom 30% small, middle 40% mid, and top 30% B
-
-CMOM = 1/2(Small High + Big High) - 1/2(Small Low + Big Low)
+- Accounts for one-week, two-week, three-week, four-week, and one-to-four week momentum strategies
 
 ]
 
 ---
 
-### Questions & Conclusions
+### Results & Conclusions
 
 .panelset[
 .panel[.panel-name[Size as a Proxy]
@@ -567,22 +579,85 @@ layout: true
 
 ---
 
-### Mtivation & Methodology 
+### Motivation & Methodology 
 
 .panelset[
 .panel[.panel-name[Growth of AI]
+
+> As a group of related technologies that include machine learning (ML) and deep learning (DL), AI has the potential to disrupt and refine the existing financial services industry.
+> .pull-right[-Bonnie Buchanan]
+
+- Between 2012 and 2016, the US invested $18.2 billion into AI compared with $2.6 billion in China and $850 million in the UK
+
+- Recently, the US has lost its global AI equity deal share, decreasing from 77% to 50% of equity deal share during the last five years
+
+- China has overtaken the US for the number of AI patents over the last five years
+  - Concentrated in Beijing, Guangdong, and Shanghai
+
+]
+.panel[.panel-name[China v. US]
+.pull-left[
+![](img/chinaus.png)
+]
+.pull-right[
+![](img/uschina.png)
+]
 ]
 .panel[.panel-name[AI in Financial Services]
+
+.pull-left[
+_Outside of the technology sector, **the financial services industry is the biggest spender on AI services** and is experiencing very fast growth._
+
+Fraud detection and compliance: 
+- "Benford's Law" is one of the easiest ways to detect fraud; it runs an analysis on the first digits in a given dataset (Pipl/Okta)
 ]
+.pull-right[
+Banking chatbots and robo-advising:
+- "JP Morgan's [AI technology] can review approximately 12,000 documents in a matter of seconds... a human would spend 360,000 hours on the same documents" (Brummer and Yadav, 2019)
+
+Algorithmic trading:
+- AT strategies - _signal processing, market sentiment, news reader, pattern recognition_
+]
+]
+
 .panel[.panel-name[Unsupervised Learning]
+
+> Unsupervised ML is defined as **a system that learns without needing human assistance** and 'labelled' data to teach it
+
+- This is most helpful as in text, image, or very high-dimensional data
+
+- Often can be used as a first step in data analysis
+
+- _clustering algotirhms, dimension reduction, feature extraction, and topic models_
+
+- **Company Name Standardization**
+
 ]
 .panel[.panel-name[Supervised Learning]
+
+_Supervised learning is the case where the chosen algorithm tries to fit the target using the given input features._ 
+
+- There is a training and testing set, with an accuracy percentage (**Company Name Standardization**)
+
+- _predictive analytics, random forests, neural networks, LASSO_
+
 ]
 ]
 
 ---
 
 ### Policy-making & Conclusions
+
+> "The technology underpinning Fintech is also fuelling a spinoff known as RegTech, which aims to make compliance and regulatory activities easier, faster, and more efficient." 
+
+- Hong Kong Stock Exchange (tech used by NASDAQ) to detect stock manipulation and market abuses
+  - Analyses historical trading activity to identify patterns and anomalies, finding dramatic stock price swings and rises in trading volume
+  
+- [DERA](https://www.sec.gov/news/speech/bauguess-big-data-ai) at the SEC aims to find cases of potential fraud via ML in massive regulatory datasets
+
+- Prior to the 2008 financial crisis, **ratings agencies used algorithmic assessments of creditworthiness to rate mortgage backed securities.** (Dodd Frank now requires agencies to disclose methodologies)
+
+- This still isn't tangible, but it makes researchers feels better
 
 ---
 
@@ -698,4 +773,3 @@ class: inverse center middle, hide-logo
 - SWIFT alternatives - Cryptocurrencies, DeFi, and central banks' adoption of different digital payment systems
 - Influences of Influencers on Investor Behavior
 ]
----
