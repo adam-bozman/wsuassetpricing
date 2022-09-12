@@ -101,6 +101,7 @@ layout: true
 
 - Through all _a priori_ simulations, the ability of a bank to service running creditors may be impaired
   - Financial diversity and uncertainty could spark runs on uncompromised operations of the respective bank
+  
   - May be further complicated through asymmetric information (information disclosure)
 
 ---
@@ -113,15 +114,15 @@ layout: true
 
 ### Results & Conclusions
 
-> Authors estimate that spillovers of an attack on one of the five most active banks would impair 31% of the network, on average (some days being significantly worse). 
+> Authors estimate that spillovers of **an attack on one of the five most active banks would impair 31% of the network**, on average (some days being significantly worse). 
 
 #### Alternative scenarios: 
 
 - Other banks respond with liquidity hoarding, **forgone payment activity could reach more than 2.5 times daily GDP**.  
 
-- Reverse stress tests also show attacks on groups of small banks could impair a significant amount of the network.  
+- Reverse stress tests also show attacks on groups of **small banks** could impair a significant amount of the network.  
 
-- Additionally, through third-party providers and financial market utilities pose additional risks
+- Additionally, third-party providers and financial market utilities pose additional risks
   - Clearing House Interbank Payment System (CHIPS) or Continuous Linked Settlement (CLS) alongside other FMUs may impair liquidty of big banks that are not attacked
   
 - The Fed sees payment flows without purpose, so they are unable to predict how this may impact borrowers and the 'real economy'
@@ -141,14 +142,13 @@ layout: true
 
 **Restrictions:**
 1,827 coins in total 
-Daily close prices to construct weekly coin returns
-2014-2020
-Coins must have price, volume, and mkt cap (>$1,000,000)
-Only exchanges with public APIs (no DeFi)
-- 109 coins in 2014
-- 1,559 coins in 2018
-- 665 coins in 2020
-- 1,446 (September 9th, 2022)
+1. Daily close prices to construct weekly coin returns from 2014-2020
+1. Coins must have price, volume, and mkt cap (>$1,000,000)
+1. Only exchanges with public APIs (no DeFi)
+  - 109 coins in 2014
+  - 1,559 coins in 2018
+  - 665 coins in 2020
+  - 1,446 coins (September 9th, 2022)
 
 ---
 
@@ -171,13 +171,13 @@ A reduction from 24 to 10 characteristics that are statistically significant
 
 .pull-right[
 
-CMKT (Cryptocurrency Market Factor)
+**CMKT** (Cryptocurrency Market Factor)
 - Value-weighted return of all cryptos and U.S. T-Bill
 
-CSMB (Cryptocurrency Size Factor)
+**CSMB** (Cryptocurrency Size Factor)
 - Accounts for mkt cap, price, max day pric, price volume, and stdev of price volume
 
-CMOM (Cryptocurrency Momentum Factor)
+**CMOM** (Cryptocurrency Momentum Factor)
 - Accounts for one-week, two-week, three-week, four-week, and one-to-four week momentum strategies
 
 ]
@@ -189,17 +189,15 @@ CMOM (Cryptocurrency Momentum Factor)
 .panelset[
 .panel[.panel-name[Size as a Proxy]
 
-> A common critique of corss-sectional trading strategies... **studies show that the size effect in the equity market is weak outside of the original Banz (1981) sample.** 
+> A common critique of cross-sectional trading strategies... **studies show that the size effect in the equity market is weak outside of the original Banz (1981) sample.** 
 
 2 Points:
 1. Size may proxy for an illiquidity premium
 1. The tradeoff between capital gains and the convenience yield: in equilibrium, **the convenience yield of larger and more mature cryptocurrencies is higher, and thus their capital gain should be lower** (Sockin and Xiong, 2018)
 
-Smaller coins have lower prices and higher illiquidity, relative to larger coins
-The CSMB is greater among coins that have higher arbitrage costs
-In the time series, CSMB is higher at times of high market volatility
+Smaller coins have lower prices and higher illiquidity, relative to larger coins.  The CSMB is greater among coins that have higher arbitrage costs. In the time series, CSMB is higher at times of high market volatility
 
-The CSMB is significantly and positively exposed to stdev of crypto market returns, suggesting that the CSMB performs well in a more volatile market (supporting the liquidity view of the size premium)
+**The CSMB is significantly and positively exposed to stdev of crypto market returns**, suggesting that the CSMB performs well in a more volatile market (supporting the liquidity view of the size premium)
 ]
 .panel[.panel-name[Momentum Effect]
 > "We find that cryptocurrency momentum effect is strong at relatively short horizons" (<1 Month)
@@ -213,11 +211,11 @@ CMOM is more pronounced among coins with high attention as proxied by trading vo
 
 ]
 .panel[.panel-name[Conclusions]
-"This paper shows that the cross-section of cryptocurrencies can be meaningfully analyzed using standard asset pricing tools." 
+_"This paper shows that the cross-section of cryptocurrencies can be meaningfully analyzed using standard asset pricing tools."_ 
 
 While the authors provide evidence to support some plausible mechanisms behind the CSMB and CMOM effects, these channels are only plausible explanations.
 
-This market is still very young, and **there is not guarantee that these results will hold in the future** (2022 Bust)
+This market is still very young, and **there is no guarantee that these results will hold in the future** (2022 Bust)
 
 Still, these results **may act as a proxy to other new/emerging asset classes** that may come into existence in the future
 
@@ -245,7 +243,7 @@ All Pricing Data comes from CoinAPI.io
 ]
 
 .pull-right[
-.center[![bitcoin](img/bitcoinpic.png)]
+.center[![bitcoin](img/Picture3.png)]
 ]
 
 ]
@@ -255,7 +253,7 @@ All Pricing Data comes from CoinAPI.io
 
 Tether's price relative to the USD may increase as a consequence of strong investor demand, and Tether may also be driven by its usefulness as a facilitator of cross-exchange arbitrage to eliminate pricing discrepancies across cryptocurrency exchanges.
 
-#### PUlled
+#### Pulled
 
 If Tether issuers are trying to provide stability to the market during downtourns, outflows of Tether and purchases of Bitcoin by Bitfinex may follow periods of negative Bitcoin returns.  Bitcoin returns may show a return reversal after negative returns.  If tether is not fully backed by USD/Euro at the outset, but issuers want to signal otherwise to investors by releasing EOM accounting statements, then Tether creators may liquidate Bitcoins into USD to demonstrate sufficient reserves.
 
@@ -264,7 +262,7 @@ If Tether issuers are trying to provide stability to the market during downtourn
 
 ---
 
-### Questions and Conclusions
+### Results and Conclusions
 
 .panelset[
 .panel[.panel-name[High-flow Events]
@@ -299,7 +297,7 @@ Note: For the net Tether/Bitcoin flows associated with the other five main Tethe
 ]
 .panel[.panel-name[Conclusions]
 
-The authors established that one large player on Bitfinex uses Tether to purchase large amounts of Bitcoin when prices are following the printing of Tether (consistent with the supply-driven hypothesis).
+The authors established that one large player on Bitfinex uses Tether to purchase large amounts of Bitcoin when prices increase following the printing of Tether **(consistent with the supply-driven hypothesis)**.
 
 > "More broadly, these findings also suggest that innovative technologies designed to bypass traditional banking systems have not eliminated the need for external surveillance, monitoring, and a regulatory framework." 
 
@@ -340,23 +338,23 @@ Data is composed of 1.9 million trades made by approximately 80,000 households b
 ]
 .panel[.panel-name[Methodology]
 
-The authors construct probit regressions with dummy variables for various stocks and investor characteristics (e.g., profit, size, extreme_ret, tech_stk) in an attempt to test repurchased stocks for characteristics that might proxy for a high degree of attention and test for types of investors who engage in repurchases.  
+The authors construct **probit regressions with dummy variables for various stocks and investor characteristics** (e.g., profit, size, extreme_ret, tech_stk) in an attempt to test repurchased stocks for characteristics that might proxy for a high degree of attention and test for types of investors who engage in repurchases.  
 
 There were marginally significant investor preferences for repurchasing stocks previously sold for a profit along with repurchasing stocks that were in the previous day's highest-return decile, but the most significant result was the recency effect.  
 
-With regard to diversification, investors who repurchase more often tend to have less-diversified portfolios.
+_With regard to diversification, investors who repurchase more often tend to have less-diversified portfolios._
 
 ]
 ]
 ---
 
-### Questions and Conclusions
+### Results and Conclusions
 
 Retail investors face time and information constraints, causing them to use cognitive shortcuts and heuristics.  **Investors will use readily available information and repurchase stocks that are touted in the news or stocks in which they previously made a profit** - _a gambler's mindset._
 
-Investors display a preference for repurchasing stocks with large positive returns on the previous day and a few large-cap stcoks in a few industries.  Of the repurchases, 36% are in the technology sector and about 14% are in the pharmaceutical and retail sectors.  **These stocks are easy for investors to recall because of wide analyst coverage, heavy advertising, and/or news headlines.**
+Investors display a preference for repurchasing stocks with large positive returns on the previous day and a few large-cap stocks in a few industries.  Of the repurchases, 36% are in the technology sector and about 14% are in the pharmaceutical and retail sectors.  **These stocks are easy for investors to recall because of wide analyst coverage, heavy advertising, and/or news headlines.**
 
-Nofsinger concludes that the recency of a trade plays a significant role in the repurchase decision and this behavior is suboptimal and associated with less sophisticated investors.
+_Nofsinger concludes that the recency of a trade plays a significant role in the repurchase decision and this behavior is suboptimal and associated with less sophisticated investors._
 
 ---
 
@@ -412,13 +410,12 @@ Databases:
 
 ---
 
-### Questions & Conclusions
+### Results & Conclusions
 
-"The critical component of the economic mechanism of moral hazard is the rational belief or expectation by market participants of outside intervention in adverse states of the world." 
+_"The critical component of the economic mechanism of moral hazard is the rational belief or expectation by market participants of outside intervention in adverse states of the world."_
 
-> Moral hazard has been a staple of economic theory since the 1960s, **but economists know little about how firm incentives are affected by potential future government intervention.**
-
-- In the sample from 1973 - 2009, the author finds a positive relationship between political connections and risk taking, as measured by stock volatility and/or leverage ratios
+- Moral hazard has been a staple of economic theory since the 1960s, **but economists know little about how firm incentives are affected by potential future government intervention.**
+- In the sample from 1973 - 2009, the author finds a **positive relationship between political connections and risk taking**, as measured by stock volatility and/or leverage ratios
 - In a more narrow sample, the author finds that politically connected firms had higher leverage prior to the 2008 financial crisis and increased their leverage more in response to local housing price growth
   - **But** they were also less likely to go bankrupt or go insolvent during and after the financial crisis **and** had higher stock returns during this crisis
   
@@ -448,12 +445,12 @@ layout: true
 - Regressions assess the determinants of the abnormal ratings - examining the ratings' investment value, their predictive effect for future returns, and their status as new information applying Fama-Macbeth tests
 ---
 
-### Questions & Conclusions
+### Results & Conclusions
 
 _**Consumer opinions are shown to provide new value-relevant information for stock investing via analysis of millions of customer product reviews posted on Amazon.com** - this return predictability holds over time, remains after controlling for firm characteristics, and can signal revenue and earnings surprises._
 
 - A spread portfolio constructed to purchase stocks with abnormal favorable customer ratings in the top tercile and selling stocks in the bottom tercile **generates and abnormal monthly return of 55bps to 73 bps**
-  - These ratings may positively predict revenue and earnings surprises and net purchases by hedge fund managers
+  - These ratings may positively predict revenue and earnings surprises and net purchases by **hedge fund managers**
 
 - These results are **concentrated among stocks in less efficient market sectors** (small cap/low analyst coverage)
 
@@ -561,7 +558,7 @@ As banks' external financing cost starts to increase, **banks will cut their loa
 
 ### Counterfactuals & Conclusions
 
-> "We first clarify an important conceptual issue underlying many extant debates about CBDC, that is, **CBDC need not to reduce bank lending unless frictions and synergies bind deposits and lending together."**
+> "We first clarify an important conceptual issue underlying many extant debates about CBDC, that is, **CBDC need not to reduce bank lending _unless frictions and synergies bind deposits and lending together._"**
 
 - Evaluating the potential impact of CBDC on bank lending is effectively an evaluation of magnitudes of these frictions and synergies
 
