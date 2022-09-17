@@ -13,15 +13,6 @@
     <link href="index_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="index_files/xaringanExtra-scribble/scribble.js"></script>
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
-    <script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-    <link href="index_files/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
-    <script src="index_files/datatables-binding/datatables.js"></script>
-    <script src="index_files/jquery/jquery-3.6.0.min.js"></script>
-    <link href="index_files/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <link href="index_files/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
-    <script src="index_files/dt-core/js/jquery.dataTables.min.js"></script>
-    <link href="index_files/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
-    <script src="index_files/crosstalk/js/crosstalk.min.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="my-theme.css" type="text/css" />
   </head>
@@ -52,474 +43,336 @@ class: center, middle, inverse, title-slide
 
 
 
+
+
+## Agenda
+
+### **Motivation &amp; Contributions**
+
+### **Server Log Data**
+
+### **Experimental Data**
+
+### **The Transmission of Less Informative Content**
+
+### **Asset Pricing Implications &amp; Conclusions**
+
 ---
-name: colors
 
-## Colors
+class: inverse center middle, hide-logo
 
-.left-column[
-Text color
+# Motivation &amp; Contributions
 
-[Link Color](#3)
+---
 
-**Bold Color**
+## Motivation &amp; Contributions 
 
-_Italic Color_
+&gt; "One of the most established theories in social psychology contends that, when considering what content to share in their social interactions, people primarily contemplate what impressions their sharing could create among receivers and whether those impressions are consistent with who they are or desire to be.  **People share to convey the impression that they are likeable; people also share to profess connoisseurship or project a certain image.**"
 
-`Inline Code`
+_This is "self-presentation" or "impression management," but its roots can be traced to human evolution, social affiliation, power dynamics, and self preservation._
+
+&gt; "In this paper, we propose that **impression management considerations significantly determine investor conversations.**"
+
+_ At least partially explaining the finding that **content that investors consume is more accurate than the content that investors share**, investors are meticulous about the image that they project._
+  - Stories best suited for impression management are not always the most value relevant.
+
+---
+
+class: inverse center middle, hide-logo
+
+# Server Log Data
+
+---
+
+name: sa
+class: center, hide-logo
+background-image: url("img/sa.png")
+background-size: contain
+
+---
+
+name: quantitative
+class: center, hide-logo
+background-image: url("img/fig1.jpg")
+background-size: contain
+
+---
+
+name: qualitative
+class: center, hide-logo
+background-image: url("img/fig2.jpg")
+background-size: contain
+
+---
+
+## Server Log Data
+
+.panelset[
+.panel[.panel-name[The Data]
+
+- All articles come from Seeking Alpha's open-source but curated collection of investments-related articles
+
+- As of January 2021, the website had published close to **one million articles authored by 17,247 contributors**
+
+- Between January and March 2019, the Seeking Alpha website attracted more than 15 million unique visitors
+  - This audience had an average household income of $331,302 (SA reported)
+  - 65% of this audience traded at least once a month
+  
+- The server log data covers the period from **August 1, 2012 to March 31, 2013**
+
+- For each article, the authors scraped the article ID, title, full article text, date of publication, author's name, and stock ticker
+  - Every article (presumed) correlates with a unique stock
+
 ]
+.panel[.panel-name[Descriptive Statistics]
 
-.right-column[
-Lorem ipsum dolor sit amet, [consectetur adipiscing elit (link)](#3), 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Erat nam at lectus urna.
-Pellentesque elit ullamcorper **dignissim cras tincidunt (bold)** lobortis feugiat. 
-_Eros donec ac odio tempor_ orci dapibus ultrices. 
-Id porta nibh venenatis cras sed felis eget velit aliquet.
-Aliquam id diam maecenas ultricies mi.
-Enim sit amet 
-`code_color("inline")`
-venenatis urna cursus eget nunc scelerisque viverra.
+.center[![:scale 80%](img/tab1.png)]
+
 ]
-
----
-
-# Big Topic or Inverse Slides `#`
-
-## Slide Headings `##`
-
-### Sub-slide Headings `###`
-
-#### Bold Call-Out `####`
-
-This is a normal paragraph text. Only use header levels 1-4.
-
-##### Possible, but not recommended `#####`
-
-###### Definitely don't use h6 `######`
-
----
-
-# Left-Column Headings
-
-.left-column[
-## First
-
-## Second
-
-## Third
-]
-
-.right-column[
-Dolor quis aptent mus a dictum ultricies egestas.
-
-Amet egestas neque tempor fermentum proin massa!
-
-Dolor elementum fermentum pharetra lectus arcu pulvinar.
-]
-
----
-class: inverse center middle
-
-# Topic Changing Interstitial
-
---
-
-```
-class: inverse center middle
-```
-
----
-layout: true
-
-## Blocks
-
----
-
-### Blockquote
-
-&gt; This is a blockquote following a header.
-&gt;
-&gt; When something is important enough, you do it even if the odds are not in your favor.
-
----
-
-### Code Blocks
-
-#### R Code
-
-
-```r
-ggplot(gapminder) +
-  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
-  geom_point() +
-  facet_wrap(~year)
-```
-
-#### JavaScript
-
-```js
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
----
-
-### More R Code
-
-
-```r
-dplyr::starwars %&gt;% dplyr::slice_sample(n = 4)
-```
-
----
-
-
-```r
-cli::cli_alert_success("It worked!")
-```
-
-```
-## ✔ It worked!
-```
-
---
-
-
-```r
-message("Just a friendly message")
-```
-
-```
-## Just a friendly message
-```
-
---
-
-
-```r
-warning("This could be bad...")
-```
-
-```
-## Warning: This could be bad...
-```
-
---
-
-
-```r
-stop("I hope you're sitting down for this")
-```
-
-```
-## Error in eval(expr, envir, enclos): I hope you're sitting down for this
-```
-
-
----
-layout: true
-
-## Tables
-
----
-exclude: false
-
-
-```r
-tibble::as_tibble(mtcars)
-```
-
-```
-## # A tibble: 32 × 11
-##      mpg   cyl  disp    hp  drat    wt  qsec    vs    am  gear  carb
-##    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-##  1  21       6  160    110  3.9   2.62  16.5     0     1     4     4
-##  2  21       6  160    110  3.9   2.88  17.0     0     1     4     4
-##  3  22.8     4  108     93  3.85  2.32  18.6     1     1     4     1
-##  4  21.4     6  258    110  3.08  3.22  19.4     1     0     3     1
-##  5  18.7     8  360    175  3.15  3.44  17.0     0     0     3     2
-##  6  18.1     6  225    105  2.76  3.46  20.2     1     0     3     1
-##  7  14.3     8  360    245  3.21  3.57  15.8     0     0     3     4
-##  8  24.4     4  147.    62  3.69  3.19  20       1     0     4     2
-##  9  22.8     4  141.    95  3.92  3.15  22.9     1     0     4     2
-## 10  19.2     6  168.   123  3.92  3.44  18.3     1     0     4     4
-## # … with 22 more rows
-## # ℹ Use `print(n = ...)` to see more rows
-```
-
----
-
-
-```r
-knitr::kable(head(mtcars), format = 'html')
-```
-
-&lt;table&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; mpg &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; cyl &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; disp &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; hp &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; drat &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; wt &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; qsec &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; vs &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; am &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; gear &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; carb &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Mazda RX4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2.620 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 16.46 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Mazda RX4 Wag &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2.875 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Datsun 710 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 22.8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 108 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 93 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.85 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2.320 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 18.61 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Hornet 4 Drive &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 258 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.08 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.215 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 19.44 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Hornet Sportabout &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 18.7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 360 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 175 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.15 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.440 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Valiant &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 18.1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 225 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 105 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2.76 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.460 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 20.22 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
----
-exclude: false
-
-
-```r
-DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
-```
-
-<div id="htmlwidget-c9eec18c6d2fa159b939" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c9eec18c6d2fa159b939">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n      <th>drat<\/th>\n      <th>wt<\/th>\n      <th>qsec<\/th>\n      <th>vs<\/th>\n      <th>am<\/th>\n      <th>gear<\/th>\n      <th>carb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-
----
-layout: true
-
-## Lists
-
----
+.panel[.panel-name[Independent/Dependent Variables]
 
 .pull-left[
-#### Here is an unordered list:
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+#### Dependent Variables
+
+- First dependent variable is **the log of 1 plus the number of times an article is read to the end, _ln(1 + # Read-to-Ends)_**
+
+- Second dependent variable is **the log of 1 plus the number of times an article is shared via e-email, _ln(1 + # Shares)_**
+
 ]
-
 .pull-right[
 
-#### And an ordered list:
+#### Independent Variables
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+_Reliance on Numbers_
+
+- This is the ratio of the total occurences of numbers in a Seeking Alpha article to the total number of words
+
+- **Quantitative** articles are considered above the median and **Qualitative** are considered below the median
+
+]
+
+]
+.panel[.panel-name[Main Analyses]
+
+.center[
+
+**To asses how _Reliance on Numbers_ relates to the number of read-to-ends**
+
+![:scale 60%](img/eq1.png)
+
+**To asses how _Reliance on Numbers_ relates to the number of shares**
+
+![:scale 60%](img/eq2.png)
+]
+
+Where _j_ is the stock discussed in article _i_, _Xi,j_ includes our article and firm-level controls and _alphak_ are author fixed effects.
+
+]
+.panel[.panel-name[Consumption &amp; Sharing]
+
+.center[![:scale 50%](img/tab2.png)]
+
+]
 ]
 
 ---
 
-### And a nested list:
+class: inverse center middle, hide-logo
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+# Experimental Data
 
 ---
 
-### Nesting an ol in ul in an ol
+## Experimental Data
 
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-  1. level 4 item (ol)
-  1. level 4 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
+.panelset[
+.panel[.panel-name[The Data]
 
----
-layout: true
+#### 840 Total Investors
 
-## Plots
+**Experiment 1 &amp; 2**
 
----
+- Based on 540 actual investors
+- 230 recruited through "Prolific"
+  - Prolific is a platform that allows researchers to recruit prescreened participants for online experiments
+  - Participants are required to speak English as their first language and answer "Yes" to,
+  1. "Have you ever made investmets (either personally or through your employment) in the common stock or shares of a company?"
+  1. "Have you invested in any of the following types of investments in the past? - Stock market."
+- 310 recruited through "CoreData Research"
+  - 46% possess net investable assets worth more than $100,000, 32% &gt; $300,000, and 12% &gt; $500,000
+  
+**Experiment A1 &amp; A2**
 
+- Include 300 additional investors (for robustness), all from CoreData
 
-```r
-library(ggplot2)
-(g &lt;- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())
-```
-
-&lt;img src="index_files/figure-html/plot-example-1.png" width="100%" /&gt;
-
----
-
-
-```r
-g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
-  ggtitle("A Plot About Cars")
-```
-
-.footnote[Requires `{showtext}`]
-
----
-layout: false
-
-## Square image
-
-&lt;center&gt;&lt;img src="https://octodex.github.com/images/labtocat.png" alt="GithHub Octocat" height="400px" /&gt;&lt;/center&gt;
-
-.footnote[GitHub Octocat]
-
----
-
-### Wide image
-
-![A wide image with a diagram of branching in git.](https://docs.github.com/assets/images/help/repository/branching.png)
-
-.footnote[Wide images scale to 100% slide width]
-
----
-
-## Two images
-
-.pull-left[
-![A GitHub Octocat, style "mother hubber"](https://octodex.github.com/images/motherhubbertocat.png)
 ]
+.panel[.panel-name[Experiment 1]
 
-.pull-right[
-![A GitHub Octocat, style "dinotcat"](https://octodex.github.com/images/dinotocat.png)
+_Experiment 1 has 280 investors, whom the authors randomly assign to two groups of 140 investors each **(110 mass-market investors and 30 affluent investors)**_
+
+- Investors are asked to read two articles (both qualitative and quantitative) that recommend that investors buy shares of Tesla
+
+At the end of each article: 
+
+- Investors in the first group (treatment group) are asked **"Is this an article you would share with a coworker?"**
+
+- Those in the second group (control group) are asked **"Is this an article you would share with a very close friend?"**
+
+_"Prior work suggests that people have stronger desires to manage their impressions while interacting with their coworkers than with their very close friends (Dubois et al., 2016)."_
+
+]
+.panel[.panel-name[Experiment 2]
+
+_Experiment 2 has a different set of 260 investors, whom the authors randomly assign to two groups of 130 investors each **(110 mass-market investors and 20 affluent investors)**_
+
+- The first group (treatment group) is asked to **"Please think about a situation where you felt you did not look as knowledgeable in the eyes of your coworkers as you would have liked.  Briefly describe the situation in the bos below"**
+
+- The second group (control group) is asked to **"Please think about what a 'perfect' office would look like to you.  Briefly describe this 'perfect' office in the box below"**
+
+- Thereafter, as part of an unrelated task, investors read the same quantitative and qualitative articles as in Experiment 1
+  - At the end of each article, the investors are asked if they would share it with a coworker
+  
+_"A large body of literature finds that people engage in more impression management when they perceive deficiencies in their self (Wicklund and Gollwitzer, 1981, 1982)."_
+
+]
+.panel[.panel-name[Primary Results]
+
+.center[![:scale 80%](img/tab31.png)]
+
+]
+.panel[.panel-name[A1/A2]
+
+&gt; Experiments A1 and A2 mimic Expriment 1 and 2, but the articles on Tesla are replaced with articles on Delta Air lines.  Participants are now also asked if they own shares of Delta Air Lines.
+
+#### A1 
+
+- 8 investors declare they hold shares of Delta
+
+#### A2 
+
+- 12 investors declare they hold shares of Delta
+
+_"Overall, the results confirm that, **when impression management considerations are strengthened, investors substantially more frequently share quantitative content over qualitative content with their peers.** In fact, the results in Experiments A1 and A2 are **noticeably stronger**, both statistically and economically."_
+
+]
+.panel[.panel-name[Secondary Results]
+
+.center[![:scale 80%](img/tab32.png)]
+
+]
 ]
 
 ---
 
-### Definition lists can be used with HTML syntax.
+class: inverse center middle, hide-logo
 
-&lt;dl&gt;
-&lt;dt&gt;Name&lt;/dt&gt;
-&lt;dd&gt;Godzilla&lt;/dd&gt;
-&lt;dt&gt;Born&lt;/dt&gt;
-&lt;dd&gt;1952&lt;/dd&gt;
-&lt;dt&gt;Birthplace&lt;/dt&gt;
-&lt;dd&gt;Japan&lt;/dd&gt;
-&lt;dt&gt;Color&lt;/dt&gt;
-&lt;dd&gt;Green&lt;/dd&gt;
-&lt;/dl&gt;
+# The Transmission of Less Informative Content
 
 ---
-class: center, middle
 
-# Thanks!
+## The Transmission of Less Informative &lt;br&gt;Content 
 
-Slides created via the R packages:
+.panelset[
+.panel[.panel-name[Article Accuracy]
 
-[**xaringan**](https://github.com/yihui/xaringan)&lt;br&gt;
-[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+**Article Tone** - the number of positive words in the article minus the number of negative words, scaled by the total number of words (above/below median)
 
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+**Regression Specification at the Article Level - **
+
+![](img/eq3.png)
+- _j_ is the stock discussed in article _i_ and _Xij_ includes the firm-level controls
+- If comparative advantage lies in the evaluation of number, **we should observe a positive coefficient estimate for _Reliance on Numbers_**
+- If comparative advantage lies in the evaluation of softer aspects of a firm, **we should observe a negative coefficient estimate for _Reliance on Numbers_**
+
+]
+.panel[.panel-name[First Factor]
+
+]
+.panel[.panel-name[Second Factor]
+
+]
+.panel[.panel-name[Table 4]
+
+.center[![:scale 80%](img/tab4.png)]
+
+]
+]
+
+---
+
+class: inverse center middle, hide-logo
+
+# Asset Pricing Implications &amp; Conclusions
+
+---
+
+## Asset Pricing Implications &amp; Conclusions
+
+&gt; "Empty vessels make the loudest sound." - Plato
+
+.panelset[
+.panel[.panel-name["Virality"]
+
+- The stocks that are more frequently mentioned in investors' conversations could become overpriced and subsequently earn abnormally low returns
+  - If receivers of information do not sufficiently account for impression management considerations (Enke, 2020)
+  - If receivers more frequently buy stocks, not short sell (Barber and Odean, 2008) 
+  
+_"To test this hypothesis, we first compute a level of virality."_
+
+**Virality:**
+
+- The total number of times SA articles regarding stock _i_ published on day _t_ are shared through email, caled by the total number of times these articles are viewed or read to the end
+- Following Jegadeesh and Titman (1993), all stocks are sorted daily into a low-virality (bottom decile) and high virality (top decile)
+  - These are all equal weighted, plus reporting of DGTW-adjusted and long-short returns
+
+
+]
+.panel[.panel-name[Table 5]
+
+.center[![:scale 60%](img/tab5.png)]
+
+]
+.panel[.panel-name[Figure 3]
+
+.center[![:scale 55%](img/fig3.jpg)]
+
+]
+.panel[.panel-name[Evidence from Twitter]
+
+&gt; Deriving asset pricing implications using an eight-month sample period is ambitious.
+
+In response to this caveat:
+
+- Repeated previous analysis on a six-year sample containing all tweets regarding publicly traded firms in the United States
+  - _Used a "web scraping program that uses Twitter's Advanced Search function"_
+- All tweets written in English and containing the dollar sign ($) followed by a ticker of a stock traded in the United States ($AAPL)
+- Total sample contained 90,994,236 tweets on 10,068 stocks from January 2013 through December 2018
+- Scraped tweet ID, date/time, user ID, content, and the number of retweets
+- Virality is equal to the total number of retweets, scaled  by the total number of tweets (in any given day)
+
+]
+.panel[.panel-name[Table 7]
+
+.center[![:scale 90%](img/tab7.png)]
+
+]
+.panel[.panel-name[Conclusions]
+
+#### Three Crucial Understandings
+
+1. What types of content propagate in financial markets through social interactions
+1. Whether any selections in content represent social transmission biases or _simply mechanisms to aggregate information efficiently_
+1. The overall implications of these factors for investor trading and asset pricing
+
+_"Given that stories well suited for impression management are not always value relevant, self-presentation purposes can cause investors to inadvertently propagate noise, leading to both price dislocations and poor investment decisions."_
+
+]
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
 <script>var slideshow = remark.create({
 "slideNumberFormat": "%current%",
 "highlightStyle": "github",
