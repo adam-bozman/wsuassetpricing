@@ -295,15 +295,20 @@ class: inverse center middle, hide-logo
 - If comparative advantage lies in the evaluation of softer aspects of a firm, **we should observe a negative coefficient estimate for _Reliance on Numbers_**
 
 ]
-.panel[.panel-name[First Factor]
+.panel[.panel-name[Factor Roles]
 
-]
-.panel[.panel-name[Second Factor]
+> "What could explain the fact that, relatively speaking, the **articles with the more frequent number of read-to-ends more accurately predict returns, whereas the articles with the more frequent number of shares less accurately predict returns?**"
+
+> "We believe that two factors play a role."
+
+1. Quantitative content is more useful for impression management and, thus, more frequently shared.  Seeking Alpha authors' competitive advantage does not lie in their analysis of a company's earnings announcements.  Moreover, large-cap stocks are shared more frequently.
+
+2. People that are most active in content sharing are less informed on average.  Possible reasons for such behavior include overconfidence and limited exposure to the challenges of outperforming the stock market.  
 
 ]
 .panel[.panel-name[Table 4]
 
-.center[![:scale 80%](img/tab4.png)]
+.center[![:scale 65%](img/tab4.png)]
 
 ]
 ]
