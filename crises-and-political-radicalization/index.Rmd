@@ -2,10 +2,8 @@
 title: "Financial Crises and Political Radicalization:"
 subtitle: "How Failing Banks Paved Hitler's Path to Power"  
 author: 
-  - "Sebastian Doerr"
-  - "Stefan Gissler"
-  - "JOSÉ-LUIS PEYDRÓ"
-  - "Hans-Joachim Voth"
+  - "Sebastian Doerr | Stefan Gissler"
+  - "José-Luis Peydró | Hans-Joachim Voth"
 date: "JF & BIS | June '22 & November '21"
 output:
   xaringan::moon_reader:
@@ -58,15 +56,15 @@ xaringanExtra::use_scribble()
 
 ## Agenda
 
-### **Motivation & Contributions**
+### **Authors & Contributions**
 
-### **Server Log Data**
+### **Historical Background**
 
-### **Experimental Data**
+### **The Data**
 
-### **The Transmission of Less Informative Content**
+### **Main Results**
 
-### **Asset Pricing Implications & Conclusions**
+### **Conclusions & Future Research**
 
 ---
 

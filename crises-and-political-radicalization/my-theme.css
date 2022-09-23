@@ -8,7 +8,7 @@
 }
 .title-slide h2, .title-slide h3 {
   color: #e7e8e2; 
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 .title-slide .remark-slide-number {
@@ -18,5 +18,5 @@
 .title-slide h1 {
   text-shadow: none;
   color: #F7F8FA;
-  margin-top: -150px;
+  margin-top: -60px;
 }
