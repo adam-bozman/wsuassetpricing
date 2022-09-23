@@ -70,7 +70,7 @@ xaringanExtra::use_scribble()
 
 class: inverse center middle, hide-logo
 
-# Motivation & Contributions
+# Authors & Contributions
 
 ---
 name: colors
