@@ -306,47 +306,112 @@ layout: true
 
 ### Danatbank & Nazi Voting
 
-![:scale 50%](img/eq2.png)
+.pull-left[
 
+![:scale 100%](img/eq2.png)
+
+![:scale 90%](img/fig2.png)
+]
+
+.pull-right[
+
+_"Figure 2 highlights our main findings."_
+
+- This figure **plots the distributions of the change in vote shares for the Nazi Party between September 1930 and July 1932** 
+
+- The Nazis gained votes throughout the country, but the distribution is shifted sharply to the right for Danat-exposed cities where _National-sozialistische Arbeiterpartei Deutschlands_ (NSDAP) increased by an additional 15% of the mean vote change
+
+- Authors use both _Danat_ and _Exposure_ as an indicator of  (Equation 2)
+
+]
 ---
 
 ### Danatbank & Nazi Voting
 
----
-
-### Economic Channel
-
-![:scale 50%](img/fig5.png)
+.center[![:scale 55%](img/tab3.png)]
 
 ---
 
 ### Economic Channel
 
-![:scale 50%](img/tab4.png)
+> How did the banking crisis boost support for the Nazi party?  There are two plausible channels.  **First**, Danat's default led to economic misery, which could have translated into greater Nazi backing.  **Second**, scapegoating Jews (and the hated Weimar political and financial system allegedly dominated by Jews) for the economic depression was a key element of Nazi propaganda.  
+
+.center[![:scale 65%](img/fig5.png)]
+
+---
+
+### Economic Channel
+
+.center[![:scale 55%](img/tab4.png)]
 
 ---
 
 ### Cultural Channel
 
-![:scale 50%](img/tab5.png)
+.center[![:scale 65%](img/tab5.png)]
 
 ---
 
 ### Danat vs Dresdner
 
-![:scale 50%](img/tab6.png)
+.pull-left[
+![:scale 100%](img/tab6.png)
+]
+
+.pull-right[
+
+_"In Table VI, we contrast the differential effects of Danat's and Dresdner's presence in more detail, as both banks failed during the crisis."_
+
+- Column (1) and (2) show that the presence of either failing bank led to a virtually identical decline in city incomes
+
+- **The electoral effect was, however, strikingly different**: column (3) shows that the presence of Dresdner alone does not significantly predict changes in voting
+
+- Adding Danat to column (4), we see that Danat's presence has a highly significant effect on support for the NSDAP
+
+]
 
 ---
 
 ### Persecution after 1933
 
-![:scale 50%](img/tab7.png)
+.pull-left[
+
+![:scale 100%](img/tab7.png)
+
+]
+
+.pull-right[
+
+_"Table VII shows that anti-Semitic actions and violence were more frequent in locations affected by Danatbank's failure."_
+
+- Columns (1) to (3) include city-level controls, and columns (4) to (6) add province fixed effects
+
+- Results from column (4) implies that having any exposure to Danat increased anti-Semitic violence by approximately 0.27 standard deviations
+
+- Combined, these results lead to the conclusion that anti-Semitic sentiment triggered by the banking crisis had repurcussions long after Danat's failure
+
+]
 
 ---
 
 ### Antifinance Sentiment
 
-![:scale 50%](img/tab9.png)
+.pull-left[
+
+![:scale 100%](img/tab9.png)
+]
+
+.pull-right[
+
+As anti-Semitic and more general antifinance attitudes are often highly correlated, especially in Germany (Becker and Pascali (2019)), **these results may also reflect general antifinance sentiment.**
+
+- Using votes for the VRP, a party that sought a revaluation of (old) Marks as an indicator of suffering and antipathy toward the financial section
+
+- The only variable that emerges as strongly significant is the presence of Danatbank
+
+- The inclusion of antifinance sentiment and the cross-sectional involvement of Jews in finance did not matter differential during the crisis
+
+]
 
 ---
 
