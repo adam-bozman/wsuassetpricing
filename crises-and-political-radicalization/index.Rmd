@@ -321,7 +321,7 @@ _"Figure 2 highlights our main findings."_
 
 - The Nazis gained votes throughout the country, but the distribution is shifted sharply to the right for Danat-exposed cities where _National-sozialistische Arbeiterpartei Deutschlands_ (NSDAP) increased by an additional 15% of the mean vote change
 
-- Authors use both _Danat_ and _Exposure_ as an indicator of  (Equation 2)
+- Authors use both exposure to _Danat_ as an indicator (Equation 2)
 
 ]
 ---
