@@ -1,0 +1,230 @@
+---
+title: "Game on:"
+subtitle: "Social networks and markets"  
+author: 
+  - "Lasse Pedersen | AQR"
+date: "JFE | June, 2022"
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: insert-logo.html
+    css: [default, xaringan-themer.css, my-theme.css]
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      beforeInit: "macros.js"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#A60F2D",
+  secondary_color = "#4D4D4D",
+  inverse_header_color = "#FFFFFF",
+  # fonts
+  header_font_google = google_font("Martel"),
+  text_font_google = google_font("Lato"),
+  code_font_google = google_font("Fira Mono")
+)
+```
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
+## Agenda
+
+### **Author & Motivation**
+
+### **The Model**
+
+### **Belief Formation & Market Behavior**
+
+### **A Case Study of GameStop**
+
+### **Conclusions & Further Directions**
+
+---
+
+class: inverse center middle, hide-logo
+
+# Author & Motivation
+
+---
+
+## Author & Motivation
+
+.panelset[
+.panel[.panel-name[Lasse Heje Pedersen]
+
+.pull-left[
+![:scale 70%](img/lasse.jpg)
+]
+
+.pull-right[
+
+### Principal - AQR
+
+- Also a finance professor at Copenhagen Business School and NYU
+- Former Director of the American Finance Association
+- Research interests focus on liquidity risk, asset prices, and investment management (liquidity risk models)
+- Recent research includes:
+  - "Big Data in Asset Pricing"
+  - "Is There a Replication Crisis in Finance?" (w/Bryan Kelly)
+  - **"Machine Learning and the Implementable Efficient Frontier" (Working Paper)**
+
+]
+
+]
+.panel[.panel-name[Rational Agents]
+
+]
+.panel[.panel-name[Social Bubbles]
+
+]
+.panel[.panel-name[Interpersonal Communications]
+
+]
+]
+
+---
+
+class: inverse center middle, hide-logo
+
+# The Model
+
+---
+
+## The Model
+
+.panelset[
+.panel[.panel-name[Asset and Signals]
+
+]
+.panel[.panel-name[Naive and Rational Learning]
+
+![](img/eq1.png)
+![](img/eq2.png)
+![](img/eq3.png)
+
+]
+.panel[.panel-name[Portfolios and Prices]
+
+![](img/eq6.png)
+![](img/eq7.png)
+![](img/eq8.png)
+
+]
+.panel[.panel-name[Four Types of Agents]
+
+]
+]
+
+---
+
+class: inverse center middle, hide-logo
+
+# Belief Formation & Market Behavior
+
+---
+
+## Belief Formation & Market Behavior
+
+.panelset[
+.panel[.panel-name[Proposition 1]
+
+]
+.panel[.panel-name[Proposition 2]
+
+]
+.panel[.panel-name[Proposition 3]
+
+]
+.panel[.panel-name[Proposition 4]
+
+]
+.panel[.panel-name[Proposition 5]
+
+]
+.panel[.panel-name[Proposition 6]
+
+]
+.panel[.panel-name[Proposition 7]
+
+]
+.panel[.panel-name[Proposition 8]
+
+]
+.panel[.panel-name[Proposition 9]
+
+]
+]
+
+---
+
+class: inverse center middle, hide-logo
+
+# A Case Study of GameStop
+
+---
+
+## A Case Study of GameStop
+
+.panelset[
+.panel[.panel-name[Gamified Trading]
+
+]
+.panel[.panel-name[Volume, Volatility, and Interest]
+
+]
+.panel[.panel-name[Figure 4]
+
+.center[![:scale 60%](img/fig4.png)]
+
+]
+.panel[.panel-name[Link to the Model]
+
+]
+]
+
+---
+
+class: inverse center middle, hide-logo
+
+# Conclusions & Further Directions
+
+---
+
+## Conclusions & Further Directions
+
+### Recap
+
+_The model can help explain a number of observed phenomena like **social network effects in portfolio holdings, excess volatility, momentum and reversal effects, meme trading, the effects of repeated news, and spillover of expectations and transaction prices across people with social links.**_
+
+_Belief formation via social networks may both affect the normal day-to-day fluctuations in asset prices and the extreme events connected to bubbles and crashes._
+
+--
+
+### Future Research
+
+> "If social network effects are a force behind pervasive dynamics throughtout global equity... such as value, momentum, and excess volatility, then the GameStop affair is only the tip of the iceberg, a very extreme tip that is currently seen more clearly than the part hidden under the surface."  
