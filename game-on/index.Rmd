@@ -368,7 +368,7 @@ class: inverse center middle, hide-logo
 .pull-right[
 - WallStreetBets, a popular subreddit, became the defacto prophet for GameStop predictions
 
-- On January 27, 2021 - Elon Musk tweeted out a single word, "Gamestonk!!" with a link to the WallStreetBets Reddit page - _an influencer who choose to follow a fanatic_
+- On January 27, 2021 - [Elon Musk](https://twitter.com/elonmusk) tweeted out a single word, "Gamestonk!!" with a link to the WallStreetBets Reddit page - _an influencer who choose to follow a fanatic_
 
 - Proposition 6 in the model declares that when an influencer follows a fanatic with a bullish view, this increases the stock price
 ]
@@ -410,3 +410,5 @@ _Belief formation via social networks may both affect the normal day-to-day fluc
 ### Future Research
 
 > "If social network effects are a force behind pervasive dynamics throughtout global equity... such as value, momentum, and excess volatility, then the GameStop affair is only the tip of the iceberg, a very extreme tip that is currently seen more clearly than the part hidden under the surface."  
+
+[AQR Review](https://www.aqr.com/Insights/Research/Working-Paper/Social-Networks-and-Markets-GameStop-and-Beyond#:~:text=Game%20On%3A%20Social%20Networks%20and%20Markets%20Participants%20in,with%20effects%20on%20investors%E2%80%99%20portfolios%20and%20market%20prices.)
